@@ -1,0 +1,97 @@
+/* Basic header container */
+header {
+  background-color: #111;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Burger menu default hidden on desktop */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.burger span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Top navigation menu */
+.top-links ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.top-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.top-links a:hover {
+  color: #08e8ca;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .top-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #111;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .top-links ul {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .top-links.active {
+    display: flex;
+  }
+}
+
+.header-brand{
+    color: rgb(206, 208, 209);
+    text-decoration: none;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.logo-banner {
+  height: 32px; /* or 24px, adjust as needed */
+  width: auto;  /* maintains aspect ratio */
+  margin-left: 8px; /* optional spacing between text and logo */
+  vertical-align: middle; /* keeps it aligned with text */
+}

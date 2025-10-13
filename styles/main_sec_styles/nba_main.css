@@ -1,0 +1,225 @@
+main {
+  padding: 2rem;
+  background-image: url(/img/main_banners/wp14332720.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.top-legend {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1d231e;
+  text-shadow: 1px 2px 5px rgba(0,0,0,1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.top-legend {
+  width: 100%;
+  background-image: url('/img/main_banners/new-nba-on-twitter-playoffs-banner-including-fox-v0-kxbqv0wmqzta1.jpg'); /* replace with your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 3rem 1rem;
+  margin: 0;
+  position: relative;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin-bottom: 5%;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 2rem 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2.1rem;
+  font-weight: 600;
+  display: block;
+  opacity: 0.7;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: end; /* centers horizontally */
+  align-items: end;     /* centers vertically */
+  text-align: end;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.grid-item:hover a {
+  color: #70baef; /* accent color on hover */
+}
+
+.grid-item {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.grid-item a {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+/* Overlay for all grid items */
+.grid-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+/* Specific backgrounds per category */
+.gi-first {
+  background-image: url('/img/nba_gorra/60669676_59FIFTY_LifestyleEnergy_LOSLAK_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-second {
+  background-image: url('/img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-third {
+  background-image: url('/img/nba_gorra/70853826_59FIFTY_NBA_PINSTRIP_CHIBUL_WHT_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-forth {
+  background-image: url('/img/nba_gorra/60620552_9FIFTY_NBA25ASG95023570_GOLWAR_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-fifth {
+  background-image: url('/img/nba_gorra/70691826_59FIFTY_NBA_BLACKNEON_LOSLAK_BLK_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-sixth {
+  background-image: url('/img/nba_gorra/70556869_9FIFTY_NBA20_LOSLAK_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-seventh {
+  background-image: url('/img/nba_gorra/60616086_59FIFTY_59502TCOLORPACK_BOSCEL_PSP_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eight {
+  background-image: url('/img/nba_gorra/60620613_59FIFTY_NBA25ASG595023569_MIAHEA_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-ninth {
+  background-image: url('/img/nba_gorra/60624222_GOLFER_GOLFERVINTAGE22833_CHIBUL_GRA_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-tenth {
+  background-image: url('/img/nba_gorra/60647846_59FIFTY_NBASTATEMENT24_BOSCEL_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eleventh {
+  background-image: url('/img/nba_gorra/60580810_9FIFTY_NBA_LOSLAK_SCRLT_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-twelvth {
+  background-image: url('/img/nba_gorra/60589677_60589706_9FIFTY_NBA24CE950LOSLAKOTC_LOSLAK_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-thirteen {
+  background-image: url('/img/nba_gorra/70507427_9FIFTY_NBA_STECH_CHIBUL_GRPHT_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-fourtheen {
+  background-image: url('/img/nba_gorra/70853835_59FIFTY_NBA_PINSTRIP_BOSCEL_WHT_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-fiftheen {
+  background-image: url('/img/');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-sixtheen {
+  background-image: url('/img/');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-seventheen {
+  background-image: url('/img/mlb_gorra/9511056015390.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eighteen {
+  background-image: url('/img/mlb_gorra/80197620_59FIFTY_HEATHERLEAGUEBASIC_NEYYAN_HGROTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

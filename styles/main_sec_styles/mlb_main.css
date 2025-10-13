@@ -1,0 +1,233 @@
+main {
+  padding: 2rem;
+  background-image: url(/img/main_banners/cO8f1z.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.top-legend {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1d231e;
+  text-shadow: 2px 2px 4px rgb(8, 8, 7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.top-legend {
+  width: 100%;
+  background-image: url('/img/main_banners/Fp1BSX1akAAXcsQ.jpeg'); /* replace with your image */
+  background-size: cover;
+  background-position: top;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 3rem 1rem;
+  margin: 0;
+  position: relative;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin-bottom: 5%;
+}
+
+.top-links{
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.4rem;
+}
+.top-links li a:hover{
+  color: aqua;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 2rem 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2.1rem;
+  font-weight: 600;
+  display: block;
+  opacity: 0.7;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: end; /* centers horizontally */
+  align-items: end;     /* centers vertically */
+  text-align: end;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.grid-item:hover a {
+  color: #70baef; /* accent color on hover */
+}
+
+.grid-item {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.grid-item a {
+  position: relative;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px black;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+/* Overlay for all grid items */
+.grid-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+/* Specific backgrounds per category */
+.gi-first {
+  background-image: url('/img/mlb_gorra/11590980_59FIFTY_MLBCOOPWOOLFITTED_CHICUBCO1979_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-second {
+  background-image: url('/img/mlb_gorra/14500036_59FIFTY_MLB_PACKWOODEN_SAFGIA_CHRM_GRY_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-third {
+  background-image: url('/img/mlb_gorra/60358058_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-forth {
+  background-image: url('/img/mlb_gorra/60366885_59FIFTY_59502TCOLORPACK_LOSDOD_EVG_3QL_b7ce200d-0644-4efa-b881-607fcfac45b0.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-fifth {
+  background-image: url('/img/mlb_gorra/60366940_60376736_59FIFTY_59502TCOLORPACK_NEYYAN_OSB_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-sixth {
+  background-image: url('/img/mlb_gorra/60426543_59FIFTY_RETROCITY_BOSRED_OTC_3QL_92a7428e-6b60-46ec-a18f-3e7ab1b8697b.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-seventh {
+  background-image: url('/img/mlb_gorra/60436684_59FIFTY_MLB24BP5950_HOUAST_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eight {
+  background-image: url('/img/mlb_gorra/60573339_59FIFTY_CLASSIC8-BITWORDMA_NEYYAN_KHK_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-ninth {
+  background-image: url('/img/mlb_gorra/60623207_59FIFTY_5950PINSTRIPE22823_NEYYAN_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-tenth {
+  background-image: url('/img/mlb_gorra/60632123_59FIFTY_MLB25CH5950_CHIWHI_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eleventh {
+  background-image: url('/img/mlb_gorra/60632125_59FIFTY_MLB25CH5950_BOSRED_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-twelvth {
+  background-image: url('/img/mlb_gorra/60632128_59FIFTY_MLB25CH5950_LOSDOD_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-thirteen {
+  background-image: url('/img/mlb_gorra/60632135_59FIFTY_MLB25CH5950_SAFGIA_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-fourtheen {
+  background-image: url('/img/mlb_gorra/70642476_59FIFTY_CUSTOM_BOSRED_BLKBFA_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-fiftheen {
+  background-image: url('/img/mlb_gorra/70643721_59FIFTY_MLB_CORALFANATIC_SADPAD_BLK_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-sixtheen {
+  background-image: url('/img/mlb_gorra/70654428_70654442_59FIFTY_ACPERFDETTIGRD2022_DETTIG_NVYNVY_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-seventheen {
+  background-image: url('/img/mlb_gorra/9511056015390.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eighteen {
+  background-image: url('/img/mlb_gorra/80197620_59FIFTY_HEATHERLEAGUEBASIC_NEYYAN_HGROTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

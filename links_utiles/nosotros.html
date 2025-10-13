@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/indiv_caps/page_mod.css">
+    <link rel="stylesheet" href="/styles/main_sec_styles/header_main.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/links_utiles/nosotros.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="icon" href="/img/main_icons/93327683573.png">
+    <title>Nosotros</title>
+</head>
+<body>
+<header>
+    <a href="/index.html" class="header-brand">
+        New Era México
+        <img class="logo-banner" src="/img/main_icons/ne_icon.png" alt="icono_newera">
+    </a>
+
+    <!-- Burger menu for mobile -->
+    <button class="burger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="top-links">
+        <ul>
+            <li><a href="/index.html">Seguir comprando</a></li>
+            <li><a href="/links_utiles/contacto.html">Contacto</a></li>
+            <li><a href="/links_utiles/bolsa_trabajo.html">Bolsa de trabajo</a></li>
+            <li><a href="/links_utiles/Rastreo.html">Rastreo envíos</a></li>
+    <a href="/payment_process/cart.html"><img class="shopping_cart" src="/img/main_icons/shopping-store_107977.ico" alt="carrito_compra">
+      Carrito (<span id="cart-count">0</span>)
+    </a>
+            </li>
+      </ul>
+    </nav>
+</header>
+
+<a href="/payment_process/cart.html" class="cart-link-mobile">
+  <img class="shopping_cart" src="/img/main_icons/shopping-store_107977.ico" alt="carrito_compra">
+  <span id="cart-count-mobile">0</span>
+</a>
+
+<main>
+    <!-- ℹ️ About Us Section -->
+    <section class="about-section">
+      <img src="/img/other_sections/nosotros_ban.jpg" class="trabajo_banner" alt="nosotros newera">
+    <h2>Sobre Nosotros</h2>
+    <p class="about-intro">
+        En <strong>New Era Mexico</strong> hemos trabajado durante años para ofrecer la mejor calidad en gorras y accesorios. 
+        Nuestra misión es combinar estilo, comodidad y durabilidad en cada producto.
+    </p>
+
+    <div class="about-cards">
+        <div class="about-card">
+        <h3>+10 Años en el mercado</h3>
+        <p>Una década de experiencia nos respalda como líderes en accesorios de moda.</p>
+        </div>
+
+        <div class="about-card">
+        <h3>Productos Oficiales</h3>
+        <p>Todas nuestras Gorras son autenticos productos newera, ya que somos orgullosos partners de distribucion en mexico y pronto el resto de centro america.</p>
+        </div>
+
+        <div class="about-card">
+        <h3>Clientes satisfechos</h3>
+        <p>Miles de clientes nos recomiendan por nuestro servicio y atención personalizada.</p>
+        </div>
+
+        <div class="about-card">
+        <h3>Garantias</h3>
+        <p>Tus compras estan garantizadas de ser un produnto oficial, ademas de 30 dias despues de la compra por cualquier motivo con un devolucion total de tu dinero.</p>
+        </div>
+
+        <div class="about-card">
+        <h3>Envios sin Costo</h3>
+        <p>Todos los cargos por envios estan totalmente cubiertos sin minimo de compra, edamas nos aseguramos de una entrega en un rango de 1 a 3 dias habiles.</p>
+        </div>
+
+        <div class="about-card">
+        <h3>Productos Exclusivos</h3>
+        <p>Contamos con productos totalmente exclusivos que no encontraras en ningun otro sitio, ya que antes que nada somos coleccionistas.</p>
+        </div>
+    </div>
+    <img src="/img/other_sections/nosotros_bottom_ban.jpg" class="trabajo_banner" alt="nosotros newera">
+    </section>
+
+    
+</main>
+
+
+
+<script>
+  function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const countElement = document.getElementById("cart-count");
+    if (countElement) {
+      countElement.textContent = cart.length;
+    }
+  }
+
+  // Update immediately when page loads
+  updateCartCount();
+</script>
+<script src="/indiv_caps/page_mod.js"></script>
+<script src="/burger.js"></script>
+</body>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-section about">
+      <h3>Sobre Nosotros</h3>
+      <p>Tenemos los modelos mas exclusivos y Buscados de newera — Desde los Clasicos hasta los mas nuevos modelos. Calidad y Estilo Garantizados.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section contact">
+      <h3>Contacto</h3>
+      <p>Email: <a href="mailto:info@capstore.com">contacto@neweramx.com.mx</a></p>
+      <p>Telefono: +52 123 456 7890</p>
+      <p>Direccion: 20 de noviembre s/n esquina, Cjon. Flamencos, CDMX, México</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Links Utiles</h3>
+      <ul>
+        <li><a href="/links_utiles/nosotros.html">Nosotros</a></li>
+        <li><a href="/exclusivos_section/exclusivos_main.html">Exclusivos</a></li>
+        <li><a href="/links_utiles/bolsa_trabajo.html">Bolsa de Trabajo</a></li>
+        <li><a href="/links_utiles/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section social">
+      <h3>Siguenos</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/neweracapmexico/"><img src="/img/social_icons/facebook_social_media_communication_icon-icons.com_75057.ico" alt="Facebook"></a>
+        <a href="https://www.instagram.com/neweramx/?hl=en"><img src="/img/social_icons/instagram_social_media_communication_icon-icons.com_75056.ico" alt="Instagram"></a>
+        <a href="https://www.whatsapp.com/"><img src="/img/social_icons/whatsapp_social_media_communication_icon-icons.com_75061.ico" alt="Whatsapp"></a>
+        <a href="https://www.tiktok.com/@neweracap?lang=en"><img src="/img/social_icons/flickr_social_media_communication_icon-icons.com_75078.ico" alt="TikTok"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> New Era Mx. Todos los Derechos Reservados.</p>
+  </div>
+</footer>
+</html>

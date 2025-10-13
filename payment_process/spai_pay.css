@@ -1,0 +1,114 @@
+body{
+    font-family: "Exo 2", sans-serif;
+}
+.spei-section {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px; 
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+} 
+.spei-header img {
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 100px;
+} 
+.spei-header h2 { 
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold; 
+} 
+.clabe-box { 
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: bold; 
+    padding: 15px; 
+    border: 2px solid #000; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+} 
+.highlight-text { 
+    color: rgb(255, 24, 24); 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+    text-align: center; 
+    text-shadow: #9b9b9b 1px;
+} 
+
+.instructions { 
+    margin-bottom: 20px; 
+    font-size: 16px; 
+    line-height: 1.6;
+    color: #5e5e5e; 
+} 
+.instructions ul { 
+    margin: 10px 0 10px 20px;
+} 
+.limits { 
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px; 
+} 
+.offer { 
+    background-color: #f7f7f7; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin-top: 20px; 
+} 
+.offer h3 { 
+    color: #333; 
+    font-size: 16px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+} 
+.offer p { 
+    font-size: 14px; 
+    margin: 5px 0; 
+} 
+
+.plain_txt_account {
+    font-size: 16px;
+    color: #000;
+}
+
+.make_payment{
+    margin-bottom: 50px;
+}
+
+.bonus { 
+    color: #0066cc; 
+    font-weight: bold; 
+} 
+.bonus-code { 
+    text-align: center; 
+    margin-top: 20px; 
+} 
+.bonus-code a { 
+    text-decoration: none; 
+    color: #0066cc; 
+    font-weight: bold; 
+}
+
+.bottom_banner{
+    display: block;          /* makes it behave like a block */
+  margin: 20px auto;       /* centers horizontally */
+  max-width: 420px;        /* optional: resize if needed */
+  height: auto;            /* keeps aspect ratio */
+    border-radius: 7px;
+    
+}
+
+.clabe-box{
+    background-color: rgb(235, 237, 238);
+}
+.compra_tot{
+    font-size: large;
+}
+
+#checkout-total{
+    font-size: large;
+    color: #f23434;
+    font-weight: 700;
+}

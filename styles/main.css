@@ -1,0 +1,732 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/main_banners/mlb-petco-park-baseball-stadium-86inrj8pb2n9i9pl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(229, 229, 229);
+    font-family: "Exo 2", sans-serif;
+}
+
+.header-brand{
+    font-family: "Exo 2", sans-serif;
+}
+
+.top-links ul li {
+    font-family: "Exo 2", sans-serif;
+    transition: transform 0.3s ease-in-out;
+    font-size: large;
+}
+.top-links ul li a:hover {
+    color: #10e5c9;
+    transform: scale(1.6);
+}
+
+/* top link icons */
+.bi {
+    width: 25px;
+    vertical-align: middle;
+    margin-left: 5px;
+    
+}
+/* top link icons */
+
+.grid-header{
+    background-color: rgb(78, 76, 78);
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+.estilos-h2 {
+    text-align: center;
+    color: rgb(245, 240, 240);
+    font-size: 3.5vh;
+    font-family: "Exo 2", sans-serif;
+    text-shadow: 1px 1px 2px rgb(28, 28, 28);
+}
+
+.estilos-p-2{
+    color: #f5f5f5;
+    font-size: 2vh;
+    font-family: "Exo 2", sans-serif;
+}
+
+.logo-banner{
+    width: 55px;
+    align-items: center;
+    margin-left: 2%;
+}
+
+/* Default (desktop) */
+.slider-continer {
+    margin-top: 100px;
+    position: relative;
+    width: 1200px;
+    height: 550px;
+    border: 3px solid #f1f1f1;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.slider-continer .slides{
+    width: 100%;
+    height: calc(100% - 40px);
+    position: relative;
+    overflow: hidden;
+}
+.slider-continer .slides img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: 20%;
+}
+.slider-continer .slides img:not(.active){
+    top: 0;
+    left: -100%;
+}
+
+/* Mobile / Tablet */
+@media (max-width: 1024px) {
+    .slider-continer {
+        width: 100%;       /* full width of screen */
+        height: auto;      /* let height adapt to image ratio */
+        margin-top: 60px;  /* smaller margin on tablets */
+    }
+
+    .slider-continer .slides {
+        height: 34vh;
+    }
+
+    .slider-continer .slides img {
+        object-fit: contain; /* avoid weird cropping */
+    }
+}
+
+@media (max-width: 600px) {
+    .slider-continer {
+        margin-top: 40px; /* smaller top space */
+    }
+
+    @media (max-width: 768px) {
+  .buttons,
+  .dotsContainer {
+    display: none;
+  }
+}
+
+}
+
+
+.top-legend{
+    background-color: #232323;
+    color: white;
+    margin-top: 1vh;
+}
+.top-legend a{
+    color: #8dd1f8;
+    
+}
+
+span.next, span.prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px;
+    color: #eee;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+}
+span.next{
+    right: 20px;
+}
+span.prev{
+    left: 20px;
+}
+span.next:hover, span.prev:hover{
+    background-color: #1c7998;
+    opacity: 0.8;
+    color: #222;
+}
+
+.dotsContainer{
+    position: absolute;
+    bottom: 5px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dotsContainer .dot{
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    border: 3px solid #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dotsContainer .active{
+    background-color: #555; 
+}
+
+@keyframes next1{
+    from{
+        left: 0%
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes next2{
+    from{
+        left: 100%
+    }
+    to{
+        left: 0%;
+    }
+}
+@keyframes prev1{
+    from{
+        left: 0%
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes prev2{
+    from{
+        left: -100%
+    }
+    to{
+        left: 0%;
+    }
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.main-content {
+    width: 1050px;
+    background-color: #1d1d1d;
+    font-family: "Exo 2", sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.info-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    padding: 15px;
+    background-color: #f1fcfd;
+    border-left: 5px solid #08e8ca;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+
+
+.page-container .slider-continer{
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+
+}
+
+
+
+/* Grid Container Styles */
+
+        .grid-container {
+            display: grid;
+            /* Default: 1 column for small screens (mobile first) */
+            grid-template-columns: 1fr;
+            /* We'll define rows later based on content or explicit height */
+            gap: 16px; /* Spacing between grid items */
+            width: 100vw; /* Occupy full viewport width */
+            min-height: 100vh; /* Occupy full viewport height */
+            padding: 20px; /* Padding around the grid */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+            align-content: start; /* Align grid content to the start of the grid area */
+            justify-content: center; /* Center grid content horizontally */
+            margin-top: 5%;
+        }
+
+        /* Grid Item Styles */
+        .grid-item {
+            background-color: #ffffff; /* White background for blocks */
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            font-size: 1.2em;
+            font-weight: 600;
+            min-height: 150px; /* Minimum height for grid items */
+            transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+
+        /* Shared background styles */
+.gi-first,
+.gi-second,
+.gi-third,
+.gi-forth,
+.gi-fifth,
+.gi-sixth {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+/*comment section*/
+
+/*Testimonios */
+.title-comments{
+  margin-top: 5%;
+  font-size: 2.8rem;
+  font-family: "Exo 2", sans-serif;
+  
+}
+
+.opiniones {
+  padding: 1.5rem 1rem;
+  background-color: #eee;
+  text-align: center;
+}
+
+.opiniones h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.contenedor-opiniones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  padding: 2px;
+}
+
+.opinion {
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.opinion img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.opinion h3 {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.opinion p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  margin: 0.3rem 0 0;
+}
+/*Fin de Testimonios */
+
+/* Individual background images */
+.gi-first {
+    background-image: url(/img/mex_heritage/60751345_59FIFTY_LifestyleEnergy_LOSDOD_KGR_3QR.webp);
+}
+.gi-second {
+    background-image: url(/img/mex_futbol/70771443_59FIFTY_LMX_CLUAME_CHRM_3QR.webp);
+}
+.gi-third {
+    background-image: url(/img/mlb_gorra/60366940_60376736_59FIFTY_59502TCOLORPACK_NEYYAN_OSB_3QR_6c85cc7b-e603-4bd7-baff-8ac0213df75c.webp);
+}
+.gi-forth {
+    background-image: url(/img/nfl_gorra/60488009_59FIFTY_LIFESTYLEENERGY_PITSTE_OTC_3QR.webp);
+}
+.gi-fifth{
+    background-image: url(/img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QR.webp);
+}
+.gi-sixth{
+    background-image: url(/img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QR.webp);
+}
+
+/* Shared link styles */
+.grid-item.gi-first a,
+.grid-item.gi-second a,
+.grid-item.gi-third a,
+.grid-item.gi-forth a,
+.grid-item.gi-fifth a,
+.grid-item.gi-sixth a
+{
+    color: rgb(242, 237, 237);
+    text-decoration: none;
+    text-shadow: 2px 1px #111;
+    font-size: 4.3vh;
+}
+
+.grid-item.gi-first a:hover,
+.grid-item.gi-second a:hover,
+.grid-item.gi-third a:hover,
+.grid-item.gi-forth a:hover,
+.grid-item.gi-fifth a:hover,
+.grid-item.gi-sixth a:hover
+{
+    font-size: 4.4vh;
+    text-shadow: 1px 2px 4px rgb(0, 0, 0);
+}
+
+        /* Responsive Breakpoints */
+
+        /* Medium screens (e.g., tablets) - 2 columns */
+        @media (min-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns */
+                /* Adjust rows if needed, or let them auto-flow */
+            }
+        }
+
+        /* Large screens (e.g., desktops) - 3 columns */
+        @media (min-width: 992px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns */
+                /* For a strict 3x3 visual, even with 6 items, we define 3 rows.
+                   The last row will simply be empty. */
+                grid-template-rows: repeat(3, 1fr); /* 3 rows, each taking equal space */
+                max-width: 1200px; /* Optional: cap max width on very large screens */
+                width: 100%; /* Ensure it still takes 100% of available width within max-width */
+            }
+        }
+
+
+/*mobile*/
+@media (max-width: 768px) {
+/*clickable img mobile*/
+.grid-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* adjust depending on your design */
+}
+
+.grid-item a {
+  display: flex;              /* centers the text */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: rgb(222, 222, 222);
+  text-decoration: none;
+  text-shadow: 2px 1px #111;
+  font-size: 4.2vh;
+}
+
+
+   /* Burger button styles */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 110;
+}
+
+.burger span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #111;
+    border-radius: 2px;
+}
+
+/* Show burger and collapse nav on small screens */
+@media (max-width: 768px) {
+
+
+
+    .slider-continer {
+        width: 60%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+
+    .burger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: row;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+.main-content {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.main-content h2 {
+    font-size: 22px;
+}
+
+.main-content p {
+    font-size: 16px;
+}
+
+.info-cards {
+    flex-direction: column;
+}
+
+
+}
+
+@media (min-width: 768px) {
+    .burger{
+        display: none;
+    }
+}
+
+/*equipo medico*/
+
+.h1-medic-profile{
+    font-size: 8vh;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    color: #e0e0e0;
+    font-family: "Exo 2", sans-serif;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.doctor-card {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+.doctor-card img {
+    width: 220px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.doctor-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.extra-info {
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    text-align: left;
+    font-size: 22px;
+    color: #555;
+}
+
+@media (max-width: 580px) {
+    .doctor-card i.bi-instagram, .doctor-card i.bi-facebook {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.doctor-card i.bi-instagram {
+    color: #E1306C;
+    font-size: 22px;
+}
+
+.doctor-card i.bi-facebook {
+    color: #3b5998;
+    font-size: 22px;
+}
+
+.doctor-card a:hover i.bi-instagram {
+  color: #C13584;
+}
+
+.doctor-card a:hover i.bi-facebook {
+  color: #2d4373;
+}
+
+
+
+.show-more-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #8dd1f8;
+    color: rgb(84, 84, 84);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.show-more-btn:hover {
+    background-color: #f05757;
+    color: rgb(231, 231, 231);
+    font-weight: 600;
+}
+
+.site-footer{
+    margin-top: 0;
+}
+
+.bottom-banner-1{
+    width: 100%;
+    display: flex;
+    margin-top: 4vh;
+    border-radius: 8px;
+}
+
+.video_bottom{
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+.bot_img{
+    width: 100%;
+}
+
+
+.nav-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+
+.bottom-left-link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(35, 35, 35, 0.8);
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+    z-index: 3;
+}
+
+.bottom-left-link:hover {
+    background-color: #3bc9f8;
+    color: #222;
+}
+
+.h1-medic-profile:hover {
+  color: #3997b7;
+  transition: ease-in-out; 
+}
+
+.h4-sub{
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+
+.dot {
+  background-color: rgb(217, 217, 217); /* Changes the background color of the dots */
+}

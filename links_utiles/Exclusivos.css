@@ -1,0 +1,135 @@
+/* 📦 Tracking Section */
+.tracking-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.tracking-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.tracking-subtitle {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.tracking-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.tracking-form input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.tracking-form input:focus {
+  border-color: #0077cc;
+}
+
+.track-btn {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.track-btn:hover {
+  background: #005fa3;
+}
+
+.tracking-info {
+  text-align: left;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.tracking-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.tracking-info ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.tracking-info li {
+  margin-bottom: 6px;
+}
+
+.tracking-info .note {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* 📱 Responsive */
+@media (max-width: 500px) {
+  .tracking-form {
+    flex-direction: column;
+  }
+  
+  .track-btn {
+    width: 100%;
+  }
+}
+
+
+.tracking-result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.tracking-result .success {
+  color: #155724;
+  background: #d4edda;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.tracking-result .error {
+  color: #721c24;
+  background: #f8d7da;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* (Optional) Center vertically if container has height */
+  margin: 30px 0;          /* Space above/below */
+}
+
+.centered-image img {
+  max-width: 100%;   /* Makes image responsive */
+  height: auto;      /* Keeps aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+}

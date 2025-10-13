@@ -1,0 +1,215 @@
+main {
+  padding: 2rem;
+  background-image: url(/img/main_banners/he4u1a91fke91.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.top-legend {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1d231e;
+  text-shadow: 1px 1px 3px rgb(8, 8, 7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Exo 2", sans-serif;
+}
+
+.top-legend {
+  width: 100%;
+  background-image: url('/img/main_banners/liga-mxwebp.webp'); /* replace with your image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 3rem 1rem;
+  margin: 0;
+  position: relative;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin-bottom: 5%;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 2rem 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2.1rem;
+  font-weight: 600;
+  display: block;
+  opacity: 0.7;
+}
+
+
+.grid-item {
+  display: flex;
+  justify-content: end; /* centers horizontally */
+  align-items: end;     /* centers vertically */
+  text-align: end;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.grid-item:hover a {
+  color: #70baef; /* accent color on hover */
+}
+
+.grid-item {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.grid-item a {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+/* Overlay for all grid items */
+.grid-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+/* Specific backgrounds per category */
+.gi-first {
+  background-image: url('/img/mex_futbol/13822233_59FIFTY_LMX_CYBER_MONTIG_BLK_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-second {
+  background-image: url('/img/mex_futbol/13958453_59FIFTY_LMX_3D_GUAATL_CHRM_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-third {
+  background-image: url('/img/mex_futbol/60593922_59FIFTY_LMX_RETRO_CLUAME_CHRM_NVY_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-forth {
+  background-image: url('/img/mex_futbol/60593926_59FIFTY_LMX_RETRO_GUACHI_CHRM_BL_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-fifth {
+  background-image: url('/img/mex_futbol/60593927_59FIFTY_LMX_RETRO_LEOLEO_CHRM_GRN_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-sixth {
+  background-image: url('/img/mex_futbol/60593930_59FIFTY_LMX_RETRO_MONTIG_CHRM_BL_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-seventh {
+  background-image: url('/img/mex_futbol/60593932_59FIFTY_LMX_RETRO_MONRAY_CHRM_NVY_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eight {
+  background-image: url('/img/mex_futbol/60594072_59FIFTY_LMX_SARAPE_GUACHI_CHW_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-ninth {
+  background-image: url('/img/mex_futbol/60594223_59FIFTY_LMX_RETRO_GUACHI_WHT_3QL_720x.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-tenth {
+  background-image: url('/img/mex_futbol/60594323_59FIFTY_LMX_CDM_PUMAS_GRPHT_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eleventh {
+  background-image: url('/img/mex_futbol/60647403_9FIFTY_LMX_PUMAS_3T_BL_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-twelvth {
+  background-image: url('/img/mex_futbol/60669766_59FIFTY_LMX_EXC_3T_CLUAME_MNT_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-thirty {
+  background-image: url('/img/mex_futbol/60669773_9FIFTY_LMX_SIDE_CLUAME_NVY_YLLW_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-forteenth {
+  background-image: url('/img/mex_futbol/70771443_59FIFTY_LMX_CLUAME_CHRM_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-fiftheen {
+  background-image: url('/img/mex_futbol/70771606_59FIFTY_LMX_GUAATL_BLK_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-sixtheen {
+  background-image: url('/img/mex_futbol/60675047_59FIFTY_LMXCorduroyFW25_CRZAZL_NAV_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

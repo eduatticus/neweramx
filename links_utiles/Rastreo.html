@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/indiv_caps/page_mod.css">
+    <link rel="stylesheet" href="/styles/main_sec_styles/header_main.css">
+    <link rel="stylesheet" href="Exclusivos.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="icon" href="/img/main_icons/93327683573.png">
+    <title>Rastreo</title>
+</head>
+<body>
+<header>
+    <a href="/index.html" class="header-brand">
+        New Era México
+        <img class="logo-banner" src="/img/main_icons/ne_icon.png" alt="icono_newera">
+    </a>
+
+    <!-- Burger menu for mobile -->
+    <button class="burger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="top-links">
+        <ul>
+            <li><a href="/index.html">Seguir comprando</a></li>
+            <li><a href="/links_utiles/contacto.html">Contacto</a></li>
+            <li><a href="/links_utiles/nosotros.html">Nosotros</a></li>
+            <li><a href="/links_utiles/bolsa_trabajo.html">Bolsa de trabajo</a></li>
+    <a href="/payment_process/cart.html"><img class="shopping_cart" src="/img/main_icons/shopping-store_107977.ico" alt="carrito_compra">
+      Carrito (<span id="cart-count">0</span>)
+    </a>
+            </li>
+      </ul>
+    </nav>
+</header>
+
+<a href="/payment_process/cart.html" class="cart-link-mobile">
+  <img class="shopping_cart" src="/img/main_icons/shopping-store_107977.ico" alt="carrito_compra">
+  <span id="cart-count-mobile">0</span>
+</a>
+
+<main>
+<!-- Package Tracking Section -->
+<section class="tracking-section">
+  <h2>Rastrea tu paquete</h2>
+  <p class="tracking-subtitle">Ingresa tu número de seguimiento para ver el estado de tu pedido.</p>
+  
+  <div class="tracking-form">
+    <input type="text" id="tracking-number" placeholder="Ej. MX1234567890" />
+    <button class="track-btn">Rastrear</button>
+  </div>
+
+  <div class="tracking-info">
+    <h3>Tiempo estimado de entrega</h3>
+    <ul>
+      <li><strong>Envíos nacionales:</strong> 2 - 3 días hábiles</li>
+      <li><strong>Envíos internacionales:</strong> 5 - 7 días hábiles</li>
+    </ul>
+    <p class="note">*Los tiempos pueden variar según la paquetería y la ubicación.</p>
+    <p class="note">*Asegurate de utilizar corractamente mayusculas y minusculas, ya que el input de informacion es sensible a letras capitales, </p>
+    <p class="note">*Espera al menos 3 minutos despues de tu compra para poder agregar tu numero de rastreo al sistema.</p>
+    <p class="note">*En caso de algun retraso por motivos externos(paqueteria utilizada dependiendo el estado), se te informara por correo electronico.</p>
+    <p class="note">*Si tienes algun problema con tu numero de rastreo, Puedes enviarnos un correo electronico y con gusto te guiaremos en el proceso.</p>
+  </div>
+  <div class="centered-image">
+  <img src="/img/main_icons/track_truck.png" alt="Imagen centrada">
+</div>
+</section>
+
+
+</main>
+
+
+
+<script>
+  function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const countElement = document.getElementById("cart-count");
+    if (countElement) {
+      countElement.textContent = cart.length;
+    }
+  }
+
+  // Update immediately when page loads
+  updateCartCount();
+</script>
+<script src="Exclusivos.js"></script>
+<script src="/indiv_caps/page_mod.js"></script>
+<script src="/burger.js"></script>
+</body>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div class="footer-section about">
+      <h3>Sobre Nosotros</h3>
+      <p>Tenemos los modelos mas exclusivos y Buscados de newera — Desde los Clasicos hasta los mas nuevos modelos. Calidad y Estilo Garantizados.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section contact">
+      <h3>Contacto</h3>
+      <p>Email: <a href="mailto:info@capstore.com">contacto@neweramx.com.mx</a></p>
+      <p>Telefono: +52 123 456 7890</p>
+      <p>Direccion: 20 de noviembre s/n esquina, Cjon. Flamencos, CDMX, México</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Links Utiles</h3>
+      <ul>
+        <li><a href="/links_utiles/nosotros.html">Nosotros</a></li>
+        <li><a href="/exclusivos_section/exclusivos_main.html">Exclusivos</a></li>
+        <li><a href="/links_utiles/bolsa_trabajo.html">Bolsa de Trabajo</a></li>
+        <li><a href="/links_utiles/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-section social">
+      <h3>Siguenos</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/neweracapmexico/"><img src="/img/social_icons/facebook_social_media_communication_icon-icons.com_75057.ico" alt="Facebook"></a>
+        <a href="https://www.instagram.com/neweramx/?hl=en"><img src="/img/social_icons/instagram_social_media_communication_icon-icons.com_75056.ico" alt="Instagram"></a>
+        <a href="https://www.whatsapp.com/"><img src="/img/social_icons/whatsapp_social_media_communication_icon-icons.com_75061.ico" alt="Whatsapp"></a>
+        <a href="https://www.tiktok.com/@neweracap?lang=en"><img src="/img/social_icons/flickr_social_media_communication_icon-icons.com_75078.ico" alt="TikTok"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> New Era Mx. Todos los Derechos Reservados.</p>
+  </div>
+</footer>
+</html>

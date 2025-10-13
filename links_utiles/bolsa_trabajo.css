@@ -1,0 +1,124 @@
+/* 💼 Jobs Section */
+.jobs-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+
+.jobs-section h2 {
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 3px rgb(23, 23, 23);
+  margin-bottom: 10px;
+  color: #222;
+  font-family: "Exo 2", sans-serif;
+}
+
+.jobs-intro {
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.job-card {
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #fff;                 /* text contrast */
+  position: relative;
+  background-size: cover;      /* make image cover card */
+  background-position: center; /* center image */
+  background-repeat: no-repeat;
+}
+
+/* Individual backgrounds */
+.job1 {
+  background-image: url("/img/other_sections/asesor-ventas.jpg");
+}
+
+.job2 {
+  background-image: url("/img/other_sections/Que-es-el-diseno-grafico-y-por-que-es-importante2.jpg");
+}
+
+.job3 {
+  background-image: url("/img/other_sections/tienda.jpeg");
+}
+
+.job4 {
+  background-image: url("/img/other_sections/mark_digital.png");
+}
+
+/* Optional overlay for better text readability */
+.job-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* dark overlay */
+  border-radius: 12px;
+}
+
+.job-card h3,
+.job-card p,
+.job-card .apply-btn {
+  position: relative;
+  z-index: 1; /* place above overlay */
+}
+
+.job-card h3 {
+  color: #13ff4e;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  color: #fcfcfc;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.apply-btn {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.apply-btn:hover {
+  background: #005fa3;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.trabajo_banner {
+  width: 100%;          /* Make it span full width */
+  height: auto;         /* Keep aspect ratio */
+  max-height: 300px;    /* Optional: limit height */
+  object-fit: cover;    /* Crop nicely if too tall */
+  border-radius: 10px;  /* Optional: rounded corners */
+  margin-bottom: 20px;  /* Space below the banner */
+  display: block;
+}

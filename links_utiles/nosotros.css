@@ -1,0 +1,79 @@
+/* ℹ️ About Section */
+.about-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+.about-card {
+  flex: 1;
+  min-width: 250px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card h3 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+.trabajo_banner {
+  width: 100%;          /* Make it span full width */
+  height: auto;         /* Keep aspect ratio */
+  max-height: 400px;    /* Optional: limit height */
+  object-fit: cover;    /* Crop nicely if too tall */
+  border-radius: 10px;  /* Optional: rounded corners */
+  margin-bottom: 20px;  /* Space below the banner */
+  object-position: 40% 20%;
+  display: block;
+}

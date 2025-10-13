@@ -1,0 +1,97 @@
+ #checkout-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow to the transition */
+  }
+
+  #checkout-btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  }
+
+  #cart-summary{
+    margin-bottom: 7vh;
+  }
+
+.banner_top{
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+.header-container {
+  display: flex;
+  align-items: center; /* This centers the items vertically */
+  justify-content: space-between; /* This pushes the h1 and img to opposite sides */
+}
+
+.img_top_ban {
+  width: 60px; /* Adjust this value to your desired size */
+}
+
+.payment_banner{
+    width: 80%;
+}
+
+  .banner_top_envios{
+    width: 100%
+  }
+
+.carrito_de{
+  font-family: "Exo 2", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+
+/* -------------------------------------- */
+/* CSS for Placement and Sizing (using Flexbox) */
+/* -------------------------------------- */
+.carrito_de {
+  /* Makes the h1 a flex container to put items on the same line */
+  display: flex;
+  /* Pushes text to left, image to right */
+  justify-content: space-between;
+  /* Aligns items vertically in the center */
+  align-items: center;
+  gap: 15px;
+}
+
+.img_top_ban {
+  /* Sets the reduced size of the image */
+  width: 65px;
+  height: auto;
+  
+  /* -------------------------------------- */
+  /* Animation Properties */
+  /* -------------------------------------- */
+  /* Applies the defined animation */
+  animation-name: floatAnimation;
+  /* Duration of one cycle (e.g., 3 seconds) */
+  animation-duration: 3s;
+  /* Easing function for smooth motion */
+  animation-timing-function: ease-in-out;
+  /* Makes the animation repeat forever */
+  animation-iteration-count: infinite;
+  /* Ensures the animation runs in reverse on alternating cycles */
+  animation-direction: alternate;
+}
+
+/* -------------------------------------- */
+/* Keyframes Definition */
+/* -------------------------------------- */
+@keyframes floatAnimation {
+  /* At the start of the animation (0%) */
+  0% {
+    /* Moves the image up slightly from its starting position */
+    transform: translateY(-7px);
+  }
+  
+  /* At the end of the animation (100%) */
+  100% {
+    /* Moves the image down slightly */
+    transform: translateY(7px);
+  }
+}
