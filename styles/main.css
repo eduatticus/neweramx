@@ -386,22 +386,22 @@ span.next:hover, span.prev:hover{
 
 /* Individual background images */
 .gi-first {
-    background-image: url(img/mex_heritage/60751345_59FIFTY_LifestyleEnergy_LOSDOD_KGR_3QR.webp);
+    background-image: url(..img/mex_heritage/60751345_59FIFTY_LifestyleEnergy_LOSDOD_KGR_3QR.webp);
 }
 .gi-second {
-    background-image: url(img/mex_futbol/70771443_59FIFTY_LMX_CLUAME_CHRM_3QR.webp);
+    background-image: url(..img/mex_futbol/70771443_59FIFTY_LMX_CLUAME_CHRM_3QR.webp);
 }
 .gi-third {
-    background-image: url(img/mlb_gorra/60366940_60376736_59FIFTY_59502TCOLORPACK_NEYYAN_OSB_3QR_6c85cc7b-e603-4bd7-baff-8ac0213df75c.webp);
+    background-image: url(..img/mlb_gorra/60366940_60376736_59FIFTY_59502TCOLORPACK_NEYYAN_OSB_3QR_6c85cc7b-e603-4bd7-baff-8ac0213df75c.webp);
 }
 .gi-forth {
-    background-image: url(img/nfl_gorra/60488009_59FIFTY_LIFESTYLEENERGY_PITSTE_OTC_3QR.webp);
+    background-image: url(..img/nfl_gorra/60488009_59FIFTY_LIFESTYLEENERGY_PITSTE_OTC_3QR.webp);
 }
 .gi-fifth{
-    background-image: url(img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QR.webp);
+    background-image: url(..img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QR.webp);
 }
 .gi-sixth{
-    background-image: url(img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QR.webp);
+    background-image: url(..img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QR.webp);
 }
 
 /* Shared link styles */
