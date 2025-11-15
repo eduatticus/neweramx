@@ -13,7 +13,7 @@ body{
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(..img/main_banners/mlb-petco-park-baseball-stadium-86inrj8pb2n9i9pl.jpg);
+    background-image: url(.../img/main_banners/mlb-petco-park-baseball-stadium-86inrj8pb2n9i9pl.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
