@@ -125,14 +125,14 @@ main {
 }
 
 .gi-third {
-  background-image: url('img/mex_heritage/2025-06-13 at 12-32-24 NEW ERA 9FORTY A-FRAME MLB LOS DODGERS TWO TONE_GREY UV SNAPBACK.webp');
+  background-image: url('/img/mex_heritage/2025-06-13 at 12-32-24 NEW ERA 9FORTY A-FRAME MLB LOS DODGERS TWO TONE_GREY UV SNAPBACK.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-forth {
-  background-image: url('img/mex_heritage/2025-06-13 at 12-35-32 SUGAR SKULL ANAHEIM ANGELS MLB CHROME WHITE BLUE UV _ NEW ERA 59FIFTY FITTED CAP.webp');
+  background-image: url('./img/mex_heritage/2025-06-13 at 12-35-32 SUGAR SKULL ANAHEIM ANGELS MLB CHROME WHITE BLUE UV _ NEW ERA 59FIFTY FITTED CAP.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
