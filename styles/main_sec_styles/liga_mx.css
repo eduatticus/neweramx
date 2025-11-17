@@ -113,7 +113,7 @@ main {
 
 /* Specific backgrounds per category */
 .gi-first {
-  background-image: url('/img/mex_futbol/13822233_59FIFTY_LMX_CYBER_MONTIG_BLK_3QL.webp');
+  background-image: url('../../img/mex_futbol/13822233_59FIFTY_LMX_CYBER_MONTIG_BLK_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
