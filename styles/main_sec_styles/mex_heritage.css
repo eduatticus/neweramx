@@ -111,8 +111,8 @@ main {
 }
 
 /* Specific backgrounds per category */
-.gl-first {
-  background-image: url('img/mex_heritage/60426884_9FIFTY_LifestyleEnergy_LOSDOD_OTC_F.webp');
+.gi-first {
+  background-image: url('../img/mex_heritage/60426884_9FIFTY_LifestyleEnergy_LOSDOD_OTC_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@ main {
 }
 
 .gi-forth {
-  background-image: url('./img/mex_heritage/2025-06-13 at 12-35-32 SUGAR SKULL ANAHEIM ANGELS MLB CHROME WHITE BLUE UV _ NEW ERA 59FIFTY FITTED CAP.webp');
+  background-image: url('../img/mex_heritage/2025-06-13 at 12-35-32 SUGAR SKULL ANAHEIM ANGELS MLB CHROME WHITE BLUE UV _ NEW ERA 59FIFTY FITTED CAP.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
