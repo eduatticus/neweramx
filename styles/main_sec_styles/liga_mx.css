@@ -1,6 +1,6 @@
 main {
   padding: 2rem;
-  background-image: url(../img/main_banners/he4u1a91fke91.png);
+  background-image: url(../../img/main_banners/he4u1a91fke91.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ main {
 
 .top-legend {
   width: 100%;
-  background-image: url('../img/main_banners/liga-mxwebp.webp'); /* replace with your image */
+  background-image: url('img/main_banners/liga-mxwebp.webp'); /* replace with your image */
   background-size: cover;
   background-position: center;
   border-radius: 5px;
