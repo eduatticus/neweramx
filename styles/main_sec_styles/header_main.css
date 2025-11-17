@@ -98,12 +98,9 @@ header {
 
 
 /* bitch ass cart styles */
-.top-links a:hover {
-  color: #08e8ca;
-  transform: scale(1.05);
-}
 
-a[href="payment_process/cart.html"] {
+
+a[href="../payment_process/cart.html"] {
   color: rgb(237, 237, 237);
   font-weight: bold;
   background-color: rgb(11, 116, 169);
