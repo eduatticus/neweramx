@@ -95,3 +95,20 @@ header {
   margin-left: 8px; /* optional spacing between text and logo */
   vertical-align: middle; /* keeps it aligned with text */
 }
+
+
+a[href="payment_process/cart.html"] {
+  color: rgb(237, 237, 237);
+  font-weight: bold;
+  background-color: rgb(11, 116, 169);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+.shopping_cart {
+  width: 22px;   /* smaller width */  /* keep consistent height */
+  vertical-align: middle;  /* align with text */
+  margin-right: 6px;       /* space between icon and text */
+}
