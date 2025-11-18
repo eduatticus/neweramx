@@ -1,6 +1,6 @@
 main {
   padding: 2rem;
-  background-image: url(/img/main_banners/wp14332720.jpg);
+  background-image: url(../../img/main_banners/wp14332720.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,90 +111,90 @@ main {
 
 /* Specific backgrounds per category */
 .gi-first {
-  background-image: url('/img/nba_gorra/60669676_59FIFTY_LifestyleEnergy_LOSLAK_OTC_3QL.webp');
+  background-image: url('../../img/nba_gorra/60669676_59FIFTY_LifestyleEnergy_LOSLAK_OTC_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-second {
-  background-image: url('/img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QL.webp');
+  background-image: url('../../img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-third {
-  background-image: url('/img/nba_gorra/70853826_59FIFTY_NBA_PINSTRIP_CHIBUL_WHT_3QL.webp');
+  background-image: url('../../img/nba_gorra/70853826_59FIFTY_NBA_PINSTRIP_CHIBUL_WHT_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-forth {
-  background-image: url('/img/nba_gorra/60620552_9FIFTY_NBA25ASG95023570_GOLWAR_OTC_3QL.webp');
+  background-image: url('../../img/nba_gorra/60620552_9FIFTY_NBA25ASG95023570_GOLWAR_OTC_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-fifth {
-  background-image: url('/img/nba_gorra/70691826_59FIFTY_NBA_BLACKNEON_LOSLAK_BLK_3QL.webp');
+  background-image: url('../../img/nba_gorra/70691826_59FIFTY_NBA_BLACKNEON_LOSLAK_BLK_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-sixth {
-  background-image: url('/img/nba_gorra/70556869_9FIFTY_NBA20_LOSLAK_OTC_3QL.webp');
+  background-image: url('../../img/nba_gorra/70556869_9FIFTY_NBA20_LOSLAK_OTC_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-seventh {
-  background-image: url('/img/nba_gorra/60616086_59FIFTY_59502TCOLORPACK_BOSCEL_PSP_3QL.webp');
+  background-image: url('../../img/nba_gorra/60616086_59FIFTY_59502TCOLORPACK_BOSCEL_PSP_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-eight {
-  background-image: url('/img/nba_gorra/60620613_59FIFTY_NBA25ASG595023569_MIAHEA_OTC_3QL.webp');
+  background-image: url('../../img/nba_gorra/60620613_59FIFTY_NBA25ASG595023569_MIAHEA_OTC_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-ninth {
-  background-image: url('/img/nba_gorra/60624222_GOLFER_GOLFERVINTAGE22833_CHIBUL_GRA_3QL.webp');
+  background-image: url('../../img/nba_gorra/60624222_GOLFER_GOLFERVINTAGE22833_CHIBUL_GRA_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-tenth {
-  background-image: url('/img/nba_gorra/60647846_59FIFTY_NBASTATEMENT24_BOSCEL_OTC_3QL.webp');
+  background-image: url('../../img/nba_gorra/60647846_59FIFTY_NBASTATEMENT24_BOSCEL_OTC_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-eleventh {
-  background-image: url('/img/nba_gorra/60580810_9FIFTY_NBA_LOSLAK_SCRLT_3QL.webp');
+  background-image: url('../../img/nba_gorra/60580810_9FIFTY_NBA_LOSLAK_SCRLT_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-twelvth {
-  background-image: url('/img/nba_gorra/60589677_60589706_9FIFTY_NBA24CE950LOSLAKOTC_LOSLAK_OTC_3QL.webp');
+  background-image: url('../../img/nba_gorra/60589677_60589706_9FIFTY_NBA24CE950LOSLAKOTC_LOSLAK_OTC_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-thirteen {
-  background-image: url('/img/nba_gorra/70507427_9FIFTY_NBA_STECH_CHIBUL_GRPHT_3QL.webp');
+  background-image: url('../../img/nba_gorra/70507427_9FIFTY_NBA_STECH_CHIBUL_GRPHT_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-fourtheen {
-  background-image: url('/img/nba_gorra/70853835_59FIFTY_NBA_PINSTRIP_BOSCEL_WHT_3QL.webp');
+  background-image: url('../../img/nba_gorra/70853835_59FIFTY_NBA_PINSTRIP_BOSCEL_WHT_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,13 +212,13 @@ main {
   background-repeat: no-repeat;
 }
 .gi-seventheen {
-  background-image: url('/img/mlb_gorra/9511056015390.webp');
+  background-image: url('/../../img/mlb_gorra/9511056015390.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-eighteen {
-  background-image: url('/img/mlb_gorra/80197620_59FIFTY_HEATHERLEAGUEBASIC_NEYYAN_HGROTC_3QL.webp');
+  background-image: url('/../../img/mlb_gorra/80197620_59FIFTY_HEATHERLEAGUEBASIC_NEYYAN_HGROTC_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
