@@ -42,19 +42,19 @@
 
 /* Individual backgrounds */
 .job1 {
-  background-image: url("/img/other_sections/asesor-ventas.jpg");
+  background-image: url("../img/other_sections/asesor-ventas.jpg");
 }
 
 .job2 {
-  background-image: url("/img/other_sections/Que-es-el-diseno-grafico-y-por-que-es-importante2.jpg");
+  background-image: url("../img/other_sections/Que-es-el-diseno-grafico-y-por-que-es-importante2.jpg");
 }
 
 .job3 {
-  background-image: url("/img/other_sections/tienda.jpeg");
+  background-image: url("../img/other_sections/tienda.jpeg");
 }
 
 .job4 {
-  background-image: url("/img/other_sections/mark_digital.png");
+  background-image: url("../img/other_sections/mark_digital.png");
 }
 
 /* Optional overlay for better text readability */
