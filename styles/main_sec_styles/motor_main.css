@@ -1,6 +1,6 @@
 main {
   padding: 2rem;
-  background-image: url(/img/main_banners/f1_wallpaper.jpg);
+  background-image: url(../../img/main_banners/f1_wallpaper.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,35 +113,35 @@ main {
 
 /* Specific backgrounds per category */
 .gi-first {
-  background-image: url('/img/motor_gorra/60669291_9FIFTY_MCLAREN_25_MCLAREN_ORG_3QL.webp');
+  background-image: url('../../img/motor_gorra/60669291_9FIFTY_MCLAREN_25_MCLAREN_ORG_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-second {
-  background-image: url('/img/motor_gorra/60594951_59FIFTY_F1MEXICORACE_RBULLF1_SKY_3QL.webp');
+  background-image: url('../../img/motor_gorra/60594951_59FIFTY_F1MEXICORACE_RBULLF1_SKY_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-third {
-  background-image: url('/img/motor_gorra/60669227_9SEVENTY_REDBULLTEAMLINE_RBULLF1_NAV_3QL.webp');
+  background-image: url('../../img/motor_gorra/60669227_9SEVENTY_REDBULLTEAMLINE_RBULLF1_NAV_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-forth {
-  background-image: url('/img/motor_gorra/60669232_59FIFTY_RBULLF1_ECOM_RBULLF1_NAV_3QL.webp');
+  background-image: url('../../img/motor_gorra/60669232_59FIFTY_RBULLF1_ECOM_RBULLF1_NAV_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-fifth {
-  background-image: url('/img/motor_gorra/60747541_59FIFTY_REDBULL_RACING_WHT_3QL.webp');
+  background-image: url('../../img/motor_gorra/60747541_59FIFTY_REDBULL_RACING_WHT_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,67 +160,67 @@ main {
   background-repeat: no-repeat;
 }
 .gi-eight {
-  background-image: url('/img/motor_gorra/60505560_9FIFTY_HAASF1TEAM_HAASF1_BLK_3QL.webp');
+  background-image: url('../../img/motor_gorra/60505560_9FIFTY_HAASF1TEAM_HAASF1_BLK_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-ninth {
-  background-image: url('/img/motor_gorra/60669265_59FIFTY_ALPINE_ECOM_ALPINE_BLK_3QL.webp');
+  background-image: url('../../img/motor_gorra/60669265_59FIFTY_ALPINE_ECOM_ALPINE_BLK_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-tenth {
-  background-image: url('/img/motor_gorra/60669357_9SEVENTY_ALPINE_25_MIAMI_ALPINE_WHT_3QL.webp');
+  background-image: url('../../img/motor_gorra/60669357_9SEVENTY_ALPINE_25_MIAMI_ALPINE_WHT_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-eleventh {
-  background-image: url('/img/motor_gorra/60669362_9SEVENTYSS_ALPINE_GRY_3QL.webp');
+  background-image: url('../../img/motor_gorra/60669362_9SEVENTYSS_ALPINE_GRY_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-twelvth {
-  background-image: url('/img/motor_gorra/60669364_9SEVENTY_ALPINE_25_SILVERSTONE_ALPINE_MULTI_3QL.webp');
+  background-image: url('../../img/motor_gorra/60669364_9SEVENTY_ALPINE_25_SILVERSTONE_ALPINE_MULTI_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-thirteen {
-  background-image: url('/img/motor_gorra/60573663_9FIFTYSTRETCHSNAP_MONACORACE_MCLAREN_MULTI_3QL.webp');
+  background-image: url('../../img/motor_gorra/60573663_9FIFTYSTRETCHSNAP_MONACORACE_MCLAREN_MULTI_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-fourtheen {
-  background-image: url('/img/motor_gorra/60504225_9FIFTY_ANTTNO_MCLAREN_BLK_3QL.webp');
+  background-image: url('../../img/motor_gorra/60504225_9FIFTY_ANTTNO_MCLAREN_BLK_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-fiftheen {
-  background-image: url('/img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QL.webp');
+  background-image: url('../../img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-sixtheen {
-  background-image: url('/img/motor_gorra/60747544_59FIFTY__RACING_MCLAREN_F1TEAM_BLKWHT_3QL.webp');
+  background-image: url('../../img/motor_gorra/60747544_59FIFTY__RACING_MCLAREN_F1TEAM_BLKWHT_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-seventheen {
-  background-image: url('/img/motor_gorra/60669289_59FIFTY_MCLAREN_ECOM_MCLAREN_ORG_3QL.webp');
+  background-image: url('../../img/motor_gorra/60669289_59FIFTY_MCLAREN_ECOM_MCLAREN_ORG_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-eighteen {
-  background-image: url('/img/motor_gorra/60593259_59FIFTY_MOTORSPORTS24_MCLAREN_GRY_3QL.webp');
+  background-image: url('../../img/motor_gorra/60593259_59FIFTY_MOTORSPORTS24_MCLAREN_GRY_3QL.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
