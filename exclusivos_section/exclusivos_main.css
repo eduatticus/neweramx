@@ -1,6 +1,6 @@
 main {
   padding: 2rem;
-  background-image: url(/img/main_banners/NEW-ERA-Alebrijes_480x480.webp);
+  background-image: url(../img/main_banners/NEW-ERA-Alebrijes_480x480.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,78 +113,78 @@ main {
 
 /* Specific backgrounds per category */
 .gi-first {
-  background-image: url('/img/caps_main_block/exclusivos_inside/14707698_59FIFTY_COLLAB_25_OCHIAHI_NAV_F.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/14707698_59FIFTY_COLLAB_25_OCHIAHI_NAV_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-second {
-  background-image: url('/img/caps_main_block/exclusivos_inside/tom1_blue.png');
+  background-image: url('../img/caps_main_block/exclusivos_inside/tom1_blue.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-third {
-  background-image: url('/img/caps_main_block/exclusivos_inside/tom1_pink.png');
+  background-image: url('../img/caps_main_block/exclusivos_inside/tom1_pink.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-forth {
-  background-image: url('/img/caps_main_block/exclusivos_inside/60598319_59FIFTY_ALEBRIJE_PCH_SKY_CHRM_F_af53bb63-54cd-4a73-951c-2eb4a50a6841.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/60598319_59FIFTY_ALEBRIJE_PCH_SKY_CHRM_F_af53bb63-54cd-4a73-951c-2eb4a50a6841.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-fifth {
-  background-image: url('/img/caps_main_block/exclusivos_inside/60597166_59FIFTY_MEX_QUETZAL_NE_CHRM_F.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/60597166_59FIFTY_MEX_QUETZAL_NE_CHRM_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-sixth {
-  background-image: url('/img/caps_main_block/exclusivos_inside/60598320_59FIFTY_NEWERA_ALEBRIJE_CHRM_F.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/60598320_59FIFTY_NEWERA_ALEBRIJE_CHRM_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-seventh {
-  background-image: url('/img/caps_main_block/exclusivos_inside/60588030_9FIFTY_LifestyleEnergy_BAT_F.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/60588030_9FIFTY_LifestyleEnergy_BAT_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-eight {
-  background-image: url('/img/caps_main_block/exclusivos_inside/70894067_59FIFTYAF_BATMANDAY_BATMAN_BROWN_F.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/70894067_59FIFTYAF_BATMANDAY_BATMAN_BROWN_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-ninth {
-  background-image: url('/img/caps_main_block/exclusivos_inside/60597695_59FIFTY_NEWERA_BEETLEJUICE_BLCK_F.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/60597695_59FIFTY_NEWERA_BEETLEJUICE_BLCK_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-tenth {
-  background-image: url('/img/caps_main_block/exclusivos_inside/60746794_59FIFTY_LifestyleEnergy_THE_20JETSONS_BLK_F.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/60746794_59FIFTY_LifestyleEnergy_THE_20JETSONS_BLK_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-eleventh {
-  background-image: url('/img/caps_main_block/exclusivos_inside/60746855_59FIFTY_LifestyleEnergy_SCOOBY_20DOO_BLK_F.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/60746855_59FIFTY_LifestyleEnergy_SCOOBY_20DOO_BLK_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .gi-twelvth {
-  background-image: url('/img/caps_main_block/exclusivos_inside/60751438_59FIFTY_LifestyleEnergy_THUNDERCATS_XNV_F.webp');
+  background-image: url('../img/caps_main_block/exclusivos_inside/60751438_59FIFTY_LifestyleEnergy_THUNDERCATS_XNV_F.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
