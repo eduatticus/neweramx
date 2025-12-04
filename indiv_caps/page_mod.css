@@ -266,7 +266,7 @@ label[for="size"] {
 
 /*cart button*/
 
-a[href="payment_process/cart.html"] {
+a[href="/payment_process/cart.html"] {
   /* Add your styles here */
   color: rgb(237, 237, 237); /* Changes the text color to red */
   font-weight: bold; /* Makes the text bold */
