@@ -7,11 +7,6 @@ main {
   font-family: 'Segoe UI', sans-serif;
 }
 
-body {
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-}
-
-
 .top-legend {
   text-align: center;
   font-size: 3rem;
@@ -44,11 +39,12 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 
 .grid-item {
   background-color: #ffffff;
