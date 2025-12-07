@@ -7,6 +7,11 @@ main {
   font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+
 .top-legend {
   text-align: center;
   font-size: 3rem;
