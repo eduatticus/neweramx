@@ -15,7 +15,7 @@ body {
 }
 
 .product-images { flex: 1; }
-.product-images img { max-width: 90%; display: block; }
+.product-images img { max-width: 80%; display: block; }
 
 .thumbs {
   display: flex;
@@ -115,7 +115,7 @@ body {
   }
 
   .thumbs {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow-x: auto;
     padding-bottom: 5px;
     margin-bottom: 6.5rem;
