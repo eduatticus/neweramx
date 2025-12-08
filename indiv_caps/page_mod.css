@@ -15,7 +15,7 @@ body {
 }
 
 .product-images { flex: 1; }
-.product-images img { max-width: 80%; display: block; }
+.product-images img { max-width: 90%; display: block; }
 
 .thumbs {
   display: flex;
