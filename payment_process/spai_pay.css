@@ -94,7 +94,7 @@ body{
 .bottom_banner{
     display: block;          /* makes it behave like a block */
   margin: 20px auto;       /* centers horizontally */
-  max-width: 420px;        /* optional: resize if needed */
+  max-width: 320px;        /* optional: resize if needed */
   height: auto;            /* keeps aspect ratio */
     border-radius: 7px;
     
