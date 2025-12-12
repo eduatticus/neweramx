@@ -1,3 +1,8 @@
+body{
+  background-color: #111;
+}
+
+
 main {
   padding: 2rem;
   background-image: url(../../img/main_banners/HSL00153_3f0d108f-1cb9-4d7a-bdc1-c835c27070fe_2048x2048.webp);
