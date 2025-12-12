@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden; /* Prevents horizontal scrolling */
+  background-color: #111;
 }
 
 
