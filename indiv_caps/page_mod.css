@@ -14,8 +14,11 @@ body {
   margin-bottom: 12vh;
 }
 
-.product-images { flex: 1; }
-.product-images img { max-width: 90%; display: block; }
+.product-images img {
+    width: 100%;
+    max-width: 100%;
+}
+
 
 .thumbs {
   display: flex;
