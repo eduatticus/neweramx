@@ -150,6 +150,15 @@ main {
   background-repeat: no-repeat;
 }
 
+.gi-sixth {
+  background-image: url('../../img/mex_heritage/71015486_59FIFTY_WBC_MEXMEX_OLV_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
 
 /* MOBILE FIX — prevent horizontal overflow */
 @media (max-width: 600px) {
