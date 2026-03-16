@@ -430,6 +430,7 @@ span.next:hover, span.prev:hover{
     text-decoration: none;
     text-shadow: 2px 1px #111;
     font-size: 4.3vh;
+    font-family: "Exo 2", sans-serif;
 }
 
 .grid-item.gi-first a:hover,
