@@ -291,12 +291,11 @@ span.next:hover, span.prev:hover{
             justify-content: center; /* Center grid content horizontally */
             margin-top: 5%;
         }
-
         /* Grid Item Styles */
         .grid-item {
             background-color: #ffffff; /* White background for blocks */
             border-radius: 12px; /* Rounded corners */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow */
+            box-shadow: 0 4px 12px rgba(1, 0, 0, 1); /* Soft shadow */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -304,10 +303,20 @@ span.next:hover, span.prev:hover{
             padding: 20px;
             text-align: center;
             color: #333;
-            font-size: 1.2em;
+            font-size: 1.6em;
             font-weight: 600;
             min-height: 150px; /* Minimum height for grid items */
             transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+        }
+
+        .grid-item a{
+            display:flex;
+            width:100%;
+            height:100%;
+            align-items:center;
+            justify-content:center;
+            text-decoration:none;
+
         }
 
         .grid-item:hover {
