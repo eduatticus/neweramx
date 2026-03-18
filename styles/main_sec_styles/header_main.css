@@ -90,7 +90,7 @@ header {
 }
 
 .logo-banner {
-  height: 32px; /* or 24px, adjust as needed */
+  height: 6vh; /* or 24px, adjust as needed */
   width: auto;  /* maintains aspect ratio */
   margin-left: 8px; /* optional spacing between text and logo */
   vertical-align: middle; /* keeps it aligned with text */
