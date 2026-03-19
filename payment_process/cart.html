@@ -35,24 +35,66 @@
         </ul>
     </nav>
 </header>
-
 <main>
-  <img class="banner_top" src="../img/other_ban_and_icons/banner envios-03.jpg" alt="banner_envios">
+  <img class="banner_top" src="/img/other_ban_and_icons/banner envios-03.jpg" alt="banner_envios">
+
   <div class="header-container">
-  <h1 class="carrito_de">Carrito de Compras</h1>
-  <img class="img_top_ban" src="../img/main_icons/93327683573.png" alt="Shopping Cart Icon">
-</div>
+    <h1 class="carrito_de">Tu Carrito de Compras</h1>
+    <img class="img_top_ban" src="/img/main_icons/93327683573.png" alt="Shopping Cart Icon">
+  </div>
+
   <div id="cart-container"></div>
 
-  <div id="cart-summary" style="margin-top:20px; padding:15px; border:1px solid #ddd; border-radius:8px; background:#fafafa;">
-    <h3>Resumen de tu carrito</h3>
+  <div id="cart-summary">
+    <h3 class="my_style">Resumen de tu carrito</h3>
     <div id="summary-items"></div>
-    <p id="summary-total" style="font-weight:bold; margin-top:10px;">Total: $0.00</p>
+    <p id="summary-total">Total: $0.00</p>
 
-    <!-- Buttons -->
-    <button id="checkout-btn" style="margin-top:10px; padding:10px 15px; background:#27ae60; color:#fff; border:none; border-radius:6px; cursor:pointer;">
+    <button id="checkout-btn">
       Proceder al Pago
     </button>
+        <button id="empty-cart-btn" style="margin-top:10px; margin-left:10px; padding:10px 15px; background:#c0392b; color:#fff; border:none; border-radius:6px; cursor:pointer;">
+      Vaciar Carrito
+    </button>
+  </div>
+
+    
+
+  <div>
+    <img class="payment_banner" src="/img/other_ban_and_icons/online-payment-options-banner-2.png" alt="metodos_de_pago">
+  </div>
+
+  <div>
+      <div>
+    <p class="disclaimer">
+      Copyright © 2026 El presente canal de instrucción o ambiente, es operado por neweramx.lat de México, S. de R.L. de C.V. identificada bajo la marca comercial "New Era Cap Store®"
+      20 de noviembre s/n esquina, Cjon. Flamencos, CDMX, México.
+    </p>
+        <div>
+    <img class="gifcon" src="/img/main_icons/source.gif" alt="logo_newera_oficial">
+  </div>
+        <p class="disclaimer_2">
+        ¡Gracias por elegir New Era! En New Era, nos comprometemos a ofrecerte una experiencia de compra segura y satisfactoria. Aquí te detallamos algunos puntos importantes sobre nuestras políticas y prácticas:
+
+    Seguridad de Datos: Utilizamos tecnologías avanzadas de cifrado para proteger tu información personal y financiera. Todas las transacciones se realizan a través de servidores seguros, garantizando la confidencialidad de tus datos.
+
+    Política de Devoluciones: Si por alguna razón no estás completamente satisfecho con tu compra, puedes devolver el producto dentro de los 30 días siguientes a la fecha de compra. Los artículos deben estar en su estado original y con todas las etiquetas adjuntas. Te reembolsaremos el monto total del producto, excluyendo los gastos de envío.
+
+    Garantía de Calidad: Todos nuestros productos New Era están fabricados con materiales de alta calidad y cumplen con nuestros estrictos estándares de control de calidad. Si encuentras algún defecto de fabricación, por favor contáctanos y nos encargaremos de reemplazar el artículo sin costo adicional.
+
+    Atención al Cliente: Nuestro equipo de atención al cliente está disponible las 24 horas del día, los 7 días de la semana, para asistirte con cualquier consulta o problema que puedas tener. Puedes contactarnos a través de nuestro sitio web, correo electrónico o redes sociales.
+
+    Política de Privacidad: Respetamos tu privacidad y nos comprometemos a no compartir tu información personal con terceros sin tu consentimiento. Para más detalles, consulta nuestra Política de Privacidad en nuestro sitio web.
+
+    Envíos y Entregas: Ofrecemos varias opciones de envío para adaptarnos a tus necesidades. Los tiempos de entrega pueden variar dependiendo de tu ubicación. Te proporcionaremos un número de seguimiento para que puedas rastrear tu pedido en todo momento.
+
+    Ofertas y Promociones: De vez en cuando, ofrecemos promociones y descuentos especiales. Asegúrate de revisar nuestra sección de ofertas para no perderte ninguna oportunidad de ahorrar en tus compras favoritas.
+
+En New Era, tu satisfacción es nuestra prioridad. Si tienes alguna pregunta o preocupación, no dudes en ponerte en contacto con nosotros. ¡Gracias por elegir New Era!
+      </p>
+    </div>
+  </div>
+</main>
     <script>
 document.getElementById("checkout-btn").addEventListener("click", function() {
   // Get current cart data
@@ -65,17 +107,6 @@ document.getElementById("checkout-btn").addEventListener("click", function() {
   window.location.href = "/checkout.html";
 });
 </script>
-
-    <button id="empty-cart-btn" style="margin-top:10px; margin-left:10px; padding:10px 15px; background:#c0392b; color:#fff; border:none; border-radius:6px; cursor:pointer;">
-      Vaciar Carrito
-    </button>
-  </div>
-
-  <div>
-    <img class="payment_banner" src="../img/other_ban_and_icons/online-payment-options-banner-nnjy0chdc1wev88q.png" alt="metodos_de_pago">
-  </div>
-</main>
-
 <script src="../burger.js"></script>
 <script src="cart.js"></script>
 
