@@ -1,4 +1,8 @@
- #checkout-btn {
+*{
+  font-family: "Exo 2", sans-serif;
+}
+
+#checkout-btn {
     margin-top: 10px;
     padding: 10px 15px;
     border: none;
@@ -6,10 +10,12 @@
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow to the transition */
+    width: 10rem;
   }
 
   #checkout-btn:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+    font-weight: 700;
   }
 
   #cart-summary{
@@ -33,6 +39,8 @@
 
 .payment_banner{
     width: 80%;
+    margin-bottom: 2vh;
+    margin: auto 0;
 }
 
   .banner_top_envios{
@@ -45,7 +53,30 @@
   align-items: center;
 }
 
+.my_style{
+  font-family: "Exo 2", sans-serif;
+}
 
+.gifcon{
+  max-height: 15vh;
+  display: block;
+  margin: 0 auto;
+}
+.disclaimer{
+  font-size: 0.8rem;
+  color: #5a5959;
+  text-align: center;
+  margin:auto 0;
+  margin-bottom: 2vh;
+}
+.disclaimer_2{
+  font-size: 0.8rem;
+  color: #5a5959;
+  text-align: center;
+  margin:auto 0;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
 /* -------------------------------------- */
 /* CSS for Placement and Sizing (using Flexbox) */
 /* -------------------------------------- */
@@ -77,6 +108,60 @@
   animation-iteration-count: infinite;
   /* Ensures the animation runs in reverse on alternating cycles */
   animation-direction: alternate;
+}
+
+/* Banner */
+.banner_top {
+  width: 100%;
+  display: block;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.carrito_de {
+  font-size: 1.8rem;
+}
+
+.img_top_ban {
+  width: 10vh;
+  height: auto;
+}
+
+/* Cart Summary Box */
+#cart-summary {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f0f0f0;
+}
+
+/* Total text */
+#summary-total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Button */
+#checkout-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background: #219150;
 }
 
 /* -------------------------------------- */
