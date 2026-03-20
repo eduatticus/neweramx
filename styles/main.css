@@ -601,6 +601,111 @@ span.next:hover, span.prev:hover{
     margin: 0 auto;
 }
 
+/* Link style */
+.excl_links {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: #eaeaea;
+  transition: color 0.3s ease;
+}
+
+/* underline animation */
+.excl_links::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transition: width 0.3s ease;
+}
+
+/* hover */
+.excl_links:hover {
+  color: #0072ff;
+}
+
+.excl_links:hover::after {
+  width: 100%;
+}
+
+/* subtitle */
+.h4-sub {
+  margin-top: 10px;
+  color: #666;
+  font-weight: 400;
+}
+
+/* 📱 MOBILE VERSION */
+@media (max-width: 768px) {
+
+  .h1-medic-profile {
+    font-size: 1.8rem;
+  }
+
+  .h4-sub {
+    font-size: 0.9rem;
+    padding: 0 15px; /* prevents text from touching edges */
+  }
+
+  .title-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .excl_links::after {
+    height: 2px; /* thinner underline for mobile */
+  }
+}
+
+.excl_links {
+  padding: 5px 10px;
+}
+
+.img_exc{
+    height: 13vh;
+}
+
+.excl_links {
+  text-decoration: none;
+  display: inline-block;
+
+  /* gradient colors */
+  background: linear-gradient(270deg, #00c6ff, #0072ff, #00c6ff);
+
+  /* makes gradient visible inside text */
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* animation */
+  animation: gradientMove 4s linear infinite;
+}
+
+/* animation keyframes */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.excl_links:hover {
+  animation-duration: 1.5s; /* speeds up on hover */
+  filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+  .excl_links {
+    animation-duration: 6s; /* slower = smoother */
+  }
+}
+
+
 .doctor-card {
     background: #fff;
     border: 2px solid #ccc;
