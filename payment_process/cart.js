@@ -85,3 +85,29 @@ if (emptyCartBtn) {
 
 // Initial render
 renderCart();
+
+
+// x hero rotation
+
+  const img = document.querySelector('.gifcon');
+  const container = document.querySelector('.gifcon');
+
+  container.addEventListener('mousemove', (e) => {
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left; // x position within the element
+    const y = e.clientY - rect.top;  // y position within the element
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / centerY) * -15; // Up/Down = X rotation
+    const rotateY = ((x - centerX) / centerX) * 30;  // Left/Right = Y rotation
+
+    img.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  container.addEventListener('mouseleave', () => {
+    img.style.transform = 'rotateX(0deg) rotateY(0deg)';
+  });
+  
+// x hero rotation end
