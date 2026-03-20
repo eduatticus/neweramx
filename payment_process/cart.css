@@ -71,11 +71,11 @@
 }
 .disclaimer_2{
   font-size: 0.8rem;
-  color: #5a5959;
+  color: #a9a7a7;
+  background: #111;
   text-align: center;
   margin:auto 0;
   margin-top: 4vh;
-  margin-bottom: 2vh;
 }
 /* -------------------------------------- */
 /* CSS for Placement and Sizing (using Flexbox) */
