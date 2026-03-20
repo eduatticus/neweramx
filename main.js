@@ -10,7 +10,6 @@ var counter = 0;
 
 // attach events
 next.addEventListener('click', slideNext);
-prev.addEventListener('click', slidePrev);
 
 
 //code for the next button
