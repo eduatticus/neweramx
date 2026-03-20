@@ -164,6 +164,12 @@
   background: #219150;
 }
 
+.gifcon{
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
 @media (max-width: 760px) {
   .payment_banner{
     width: 100%;
