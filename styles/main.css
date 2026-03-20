@@ -619,6 +619,8 @@ span.next:hover, span.prev:hover{
     flex-direction: column;
 }
 
+.disclaimer_2{
+    display: none;
 
 }
 
