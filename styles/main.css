@@ -9,16 +9,16 @@
 
 
 body{
-    width: 100%;
+    width: 100%;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     background-image: url(../img/main_banners/mlb-petco-park-baseball-stadium-86inrj8pb2n9i9pl.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgb(229, 229, 229);
-    font-family: "Exo 2", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(229, 229, 229);
+    font-family: "Exo 2", sans-serif;
 }
 
 .header-brand{
@@ -65,7 +65,7 @@ body{
 }
 
 .logo-banner{
-    height: 6vh;
+    height: 5vh;
     align-items: center;
     margin-left: 2%;
     border-radius: 12px;
@@ -98,49 +98,6 @@ body{
     top: 0;
     left: -100%;
 }
-
-/*new code*/
-
-.slider-continer {
-    position: relative;
-    overflow: hidden;
-}
-
-.slides {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.slides a {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-/* VERY IMPORTANT */
-.slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    opacity: 0;
-    z-index: 0;
-}
-
-/* Only active image is visible */
-.slides img.active {
-    opacity: 1;
-    z-index: 1;
-}
-
-/*new code*/
 
 /* Mobile / Tablet */
 @media (max-width: 1024px) {
@@ -335,6 +292,7 @@ span.next:hover, span.prev:hover{
             justify-content: center; /* Center grid content horizontally */
             margin-top: 5%;
         }
+
         /* Grid Item Styles */
         .grid-item {
             background-color: #ffffff; /* White background for blocks */
@@ -366,6 +324,8 @@ span.next:hover, span.prev:hover{
         .grid-item:hover {
             transform: translateY(-5px); /* Slight lift on hover */
         }
+
+
 
         /* Shared background styles */
 .gi-first,
@@ -437,28 +397,23 @@ span.next:hover, span.prev:hover{
 }
 /*Fin de Testimonios */
 
+/* Individual background images */
 .gi-first {
-    /* FIX: Changed '/img/' to '../img/' */
     background-image: url(../img/mex_heritage/60751345_59FIFTY_LifestyleEnergy_LOSDOD_KGR_3QR.webp);
 }
 .gi-second {
-    /* FIX: Changed '/img/' to '../img/' */
     background-image: url(../img/mex_futbol/70771443_59FIFTY_LMX_CLUAME_CHRM_3QR.webp);
 }
 .gi-third {
-    /* FIX: Changed '/img/' to '../img/' */
     background-image: url(../img/mlb_gorra/60366940_60376736_59FIFTY_59502TCOLORPACK_NEYYAN_OSB_3QR_6c85cc7b-e603-4bd7-baff-8ac0213df75c.webp);
 }
 .gi-forth {
-    /* FIX: Changed '/img/' to '../img/' */
     background-image: url(../img/nfl_gorra/60488009_59FIFTY_LIFESTYLEENERGY_PITSTE_OTC_3QR.webp);
 }
 .gi-fifth{
-    /* FIX: Changed '/img/' to '../img/' */
     background-image: url(../img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QR.webp);
 }
 .gi-sixth{
-    /* FIX: Changed '/img/' to '../img/' */
     background-image: url(../img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QR.webp);
 }
 
@@ -474,7 +429,6 @@ span.next:hover, span.prev:hover{
     text-decoration: none;
     text-shadow: 2px 1px #111;
     font-size: 4.3vh;
-    font-family: "Exo 2", sans-serif;
 }
 
 .grid-item.gi-first a:hover,
@@ -619,8 +573,6 @@ span.next:hover, span.prev:hover{
     flex-direction: column;
 }
 
-.disclaimer_2{
-    display: none;
 
 }
 
