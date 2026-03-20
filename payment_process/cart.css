@@ -164,6 +164,16 @@
   background: #219150;
 }
 
+@media (max-width: 760px) {
+  .payment_banner{
+    width: 100%;
+    margin: auto 0;
+  }
+  .gifcon {
+    height: 11vh;
+  }
+}
+
 /* -------------------------------------- */
 /* Keyframes Definition */
 /* -------------------------------------- */
