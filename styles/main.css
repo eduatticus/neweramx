@@ -13,7 +13,7 @@ body{
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/main_banners/mlb-petco-park-baseball-stadium-86inrj8pb2n9i9pl.jpg);
+    background-image: url(/img/main_banners/mlb-petco-park-baseball-stadium-86inrj8pb2n9i9pl.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -399,22 +399,22 @@ span.next:hover, span.prev:hover{
 
 /* Individual background images */
 .gi-first {
-    background-image: url(../img/mex_heritage/60751345_59FIFTY_LifestyleEnergy_LOSDOD_KGR_3QR.webp);
+    background-image: url(/img/mex_heritage/60751345_59FIFTY_LifestyleEnergy_LOSDOD_KGR_3QR.webp);
 }
 .gi-second {
-    background-image: url(../img/mex_futbol/70771443_59FIFTY_LMX_CLUAME_CHRM_3QR.webp);
+    background-image: url(/img/mex_futbol/70771443_59FIFTY_LMX_CLUAME_CHRM_3QR.webp);
 }
 .gi-third {
-    background-image: url(../img/mlb_gorra/60366940_60376736_59FIFTY_59502TCOLORPACK_NEYYAN_OSB_3QR_6c85cc7b-e603-4bd7-baff-8ac0213df75c.webp);
+    background-image: url(/img/mlb_gorra/60366940_60376736_59FIFTY_59502TCOLORPACK_NEYYAN_OSB_3QR_6c85cc7b-e603-4bd7-baff-8ac0213df75c.webp);
 }
 .gi-forth {
-    background-image: url(../img/nfl_gorra/60488009_59FIFTY_LIFESTYLEENERGY_PITSTE_OTC_3QR.webp);
+    background-image: url(/img/nfl_gorra/60488009_59FIFTY_LIFESTYLEENERGY_PITSTE_OTC_3QR.webp);
 }
 .gi-fifth{
-    background-image: url(../img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QR.webp);
+    background-image: url(/img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QR.webp);
 }
 .gi-sixth{
-    background-image: url(../img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QR.webp);
+    background-image: url(/img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QR.webp);
 }
 
 /* Shared link styles */
@@ -486,6 +486,8 @@ span.next:hover, span.prev:hover{
   text-shadow: 2px 1px #111;
   font-size: 4.2vh;
 }
+
+
 
 
    /* Burger button styles */
@@ -584,21 +586,16 @@ span.next:hover, span.prev:hover{
 
 /*equipo medico*/
 
-.h1-medic-profile{
-    font-size: 8vh;
-    text-align: center;
-    margin-bottom: 4%;
-    margin-top: 4%;
-    color: #e0e0e0;
-    font-family: "Exo 2", sans-serif;
+/* Wrapper centers everything */
+.title-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.team-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+/* Main title */
+.h1-medic-profile {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 /* Link style */
@@ -705,6 +702,23 @@ span.next:hover, span.prev:hover{
   }
 }
 
+
+.h1-medic-profile{
+    font-size: 7vh;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    color: #e0e0e0;
+    font-family: "Exo 2", sans-serif;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 .doctor-card {
     background: #fff;
@@ -848,3 +862,5 @@ span.next:hover, span.prev:hover{
 .dot {
   background-color: rgb(217, 217, 217); /* Changes the background color of the dots */
 }
+
+
