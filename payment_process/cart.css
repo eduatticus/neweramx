@@ -176,6 +176,11 @@
   .carrito_de {
     font-size: 1.4rem;
   }
+
+  .img_top_ban {
+  width: 4vh;
+  height: auto;
+  }
 }
 
 /* -------------------------------------- */
