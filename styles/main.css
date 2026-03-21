@@ -45,14 +45,14 @@ body{
 /* top link icons */
 
 .grid-header{
-    background-color: rgb(78, 76, 78);
+    background-color: rgba(48, 128, 75, 0.5)
     padding: 20px;
     border-radius: 8px;
     opacity: 0.8;
 }
 .estilos-h2 {
     text-align: center;
-    color: rgb(245, 240, 240);
+    color: #fff;
     font-size: 3.5vh;
     font-family: "Exo 2", sans-serif;
     text-shadow: 1px 1px 2px rgb(28, 28, 28);
