@@ -853,6 +853,15 @@ span.next:hover, span.prev:hover{
     margin-bottom: 0%;
 }
 
+@media (max-width: 768px) {
+	.video_bottom{
+   		display:none
+	}
+
+ }
+
+
+
 .bot_img{
     width: 100%;
 }
