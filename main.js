@@ -1,101 +1,61 @@
-// access the images
-let slideImages = document.querySelectorAll('.slides img');
-// access the prev and next buttons
-let next = document.querySelector('.next');
-let prev = document.querySelector('.prev');
-// access the indicators
-let dots = document.querySelectorAll('.dot');
+const slides = document.querySelector('.slides');
+const slideItems = document.querySelectorAll('.slides a');
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+const dots = document.querySelectorAll('.dot');
 
-var counter = 0;
+let index = 0;
+let interval;
 
-// attach events
-next.addEventListener('click', slideNext);
+// Move slider
+function updateSlider() {
+    slides.style.transform = `translateX(-${index * 100}%)`;
 
-//code for the next button
+    // update dots
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
+
+// Next
 function slideNext() {
-    slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
-    slideImages[counter].classList.remove('active'); // Hide current
-
-    if (counter >= slideImages.length - 1) {
-        counter = 0;
-    } else {
-        counter++;
-    }
-
-    resetSlides(); // Hide all
-    slideImages[counter].classList.add('active'); // Show new
-    slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
-
-    indicators();
+    index = (index + 1) % slideItems.length;
+    updateSlider();
 }
 
-function resetSlides() {
-    slideImages.forEach(img => {
-        img.classList.remove('active');
-        img.style.animation = '';
-    });
-}
-//code for prev button
-prev.addEventListener('click', slidePrev);
+// Prev
 function slidePrev() {
-    slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
-    if (counter == 0) {
-        counter = slideImages.length - 1;
-    }
-    else {
-        counter--;
-    }
-    slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
-    indicators();
+    index = (index - 1 + slideItems.length) % slideItems.length;
+    updateSlider();
 }
 
-//auto  sliding
-function autoSliding() {
-    deleteInterval = setInterval(timer, 7000);
-    function timer() {
-        slideNext();
-        indicators();
-    }
-}
-autoSliding();
+// Buttons
+next.addEventListener('click', slideNext);
+prev.addEventListener('click', slidePrev);
 
-//stop auto sliding when mouse is over
-const container = document.querySelector('.slider-continer');
-container.addEventListener('mouseover', function(){
-    clearInterval(deleteInterval);
+// Dots click
+dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+        index = i;
+        updateSlider();
+    });
 });
 
-//Resume sliding when mouse is out
-container.addEventListener('mouseout', autoSliding);
-
-//Add and remove active class from the indicators
-function indicators() {
-    for (i = 0; i < dots.length; i++){
-        dots[i].className = dots[i].className.replace(' active', '');
-    }
-    dots[counter].className += ' active';
+// Auto slide
+function startAutoSlide() {
+    interval = setInterval(slideNext, 6000);
 }
 
-//Add clink event to the indicator
-function switchImage(currentImage) {
-    currentImage.classList.add('active');
-    var imageId = currentImage.getAttribute('attr');
-    if (imageId > counter) {
-        slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
-        counter = imageId;
-        slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
-    }
-    else if (imageId == counter) {
-        return;
-    }
-    else {
-        slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
-        counter = imageId;
-        slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
-    }
-    indicators();
+function stopAutoSlide() {
+    clearInterval(interval);
 }
 
+// Pause on hover (desktop)
+const container = document.querySelector('.slider-continer');
+container.addEventListener('mouseenter', stopAutoSlide);
+container.addEventListener('mouseleave', startAutoSlide);
+
+// Start
+startAutoSlide();
 
 // Accordion logic
 const headers = document.querySelectorAll('.accordion-header');
