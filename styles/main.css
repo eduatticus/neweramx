@@ -328,7 +328,7 @@ span.next:hover, span.prev:hover{
             box-sizing: border-box; /* Include padding in element's total width and height */
             align-content: start; /* Align grid content to the start of the grid area */
             justify-content: center; /* Center grid content horizontally */
-            margin-top: 5%;
+            margin-top: 2%;
         }
 
         /* Grid Item Styles */
