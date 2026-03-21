@@ -45,11 +45,9 @@ body{
 /* top link icons */
 
 .grid-header{
-    background-color: rgb(78, 76, 78);
     padding: 20px;
     border-radius: 8px;
     opacity: 0.8;
-    border: dotted;
 }
 
 .estilos-h2 {
