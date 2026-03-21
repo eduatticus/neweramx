@@ -126,6 +126,9 @@ body{
   .dotsContainer {
     display: none;
   }
+  .estilos-h2 {
+    font-size: 2.2vh;
+}
 }
 
 }
