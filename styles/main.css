@@ -72,65 +72,100 @@ body{
 }
 
 /* Default (desktop) */
+/* Container */
 .slider-continer {
-    margin-top: 100px;
     position: relative;
-    width: 1200px;
-    height: 550px;
-    border: 3px solid #f1f1f1;
-    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
-}
-
-.slider-continer .slides{
     width: 100%;
-    height: calc(100% - 40px);
-    position: relative;
     overflow: hidden;
 }
-.slider-continer .slides img{
+
+/* Slides wrapper */
+.slides {
+    display: flex;
     width: 100%;
-    height: 100%;
-    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Each slide */
+.slides a {
+    min-width: 100%;
+    display: block;
+}
+
+/* Images */
+.slides img {
+    width: 100%;
     object-fit: cover;
-    object-position: 20%;
-}
-.slider-continer .slides img:not(.active){
-    top: 0;
-    left: -100%;
+    display: block;
 }
 
-/* Mobile / Tablet */
-@media (max-width: 1024px) {
-    .slider-continer {
-        width: 100%;       /* full width of screen */
-        height: auto;      /* let height adapt to image ratio */
-        margin-top: 60px;  /* smaller margin on tablets */
-    }
 
-    .slider-continer .slides {
-        height: 32vh;
-    }
-
-    .slider-continer .slides img {
-        object-fit: contain; /* avoid weird cropping */
+/* Desktop height */
+@media (min-width: 768px) {
+    .slides img {
+        height: 400px;
     }
 }
 
-@media (max-width: 600px) {
-    .slider-continer {
-        margin-top: 40px; /* smaller top space */
-    }
-
-    @media (max-width: 768px) {
-  .buttons,
-  .dotsContainer {
-    display: none;
-  }
-  .estilos-h2 {
-    font-size: 2.4vh;
-}
+.slider-continer {
+    width: 100%;
+    aspect-ratio: 16 / 6; /* or whatever you chose */
+    overflow: hidden;
 }
 
+.slides {
+    display: flex;
+    height: 100%; /* IMPORTANT */
+}
+
+.slides a {
+    min-width: 100%;
+    height: 100%; /* IMPORTANT */
+}
+
+.slides img {
+    width: 100%;
+    height: 100%; /* THIS is what you're missing */
+    object-fit: cover;
+}
+
+/* Buttons */
+.buttons span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.next { right: 10px; }
+.prev { left: 10px; }
+
+/* Dots */
+.dotsContainer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    opacity: 1;
 }
 
 
