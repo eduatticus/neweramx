@@ -857,8 +857,9 @@ span.next:hover, span.prev:hover{
 	.video_bottom{
    		display:none
 	}
-
- }
+	.dotsContainer{
+		display:none;
+	 }
 
 
 
