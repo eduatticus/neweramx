@@ -861,16 +861,9 @@ span.next:hover, span.prev:hover{
 		display:none;
 	 }
 
-.fullscreen-container {
+.bot_img{
     width: 100%;
-    overflow: hidden;
 }
-
-.bot_img {
-    width: 100%;
-    object-fit: cover;
-}
-
 
 
 .nav-icon {
