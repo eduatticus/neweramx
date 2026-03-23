@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!container) return; // avoid error if element not found
         container.innerHTML = ""; 
 
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 3; i++) {
             const index = (startIndex + i) % opiniones.length;
             const { nombre, comentario, imagen } = opiniones[index];
 
