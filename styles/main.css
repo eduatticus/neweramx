@@ -861,7 +861,10 @@ span.next:hover, span.prev:hover{
 		display:none;
 	 }
 
-
+.fullscreen-container {
+    width: 100%;
+    overflow: hidden;
+}
 
 .bot_img {
     width: 100%;
