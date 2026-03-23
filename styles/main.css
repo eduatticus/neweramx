@@ -386,18 +386,22 @@ span.next:hover, span.prev:hover{
   margin-top: 5%;
   font-size: 2.8rem;
   font-family: "Exo 2", sans-serif;
+  color: #00c6ff;
   
 }
 
 .opiniones {
   padding: 1.5rem 1rem;
-  background-color: #eee;
+  background-color: #1b1b1b;
   text-align: center;
+  border-bottom: 1px solid #fff;
 }
+
 
 .opiniones h2 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
+  color: #00c6ff;
 }
 
 .contenedor-opiniones {
@@ -424,13 +428,13 @@ span.next:hover, span.prev:hover{
 .opinion h3 {
   margin: 0.3rem 0;
   font-size: 1rem;
-  color: #333;
+  color: #38adf5;
 }
 
 .opinion p {
   font-style: italic;
   font-size: 1rem;
-  color: #555;
+  color: #e1e0e0;
   margin: 0.3rem 0 0;
 }
 /*Fin de Testimonios */
