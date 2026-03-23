@@ -46,7 +46,12 @@
 }
 
 .footer-section li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+.foot_logo{
+  max-height: 8vh;
+  flex: 1 1 220px;
 }
 
 .social-icons a {
