@@ -258,7 +258,8 @@ main {
     }
 }
 
-.product-title {
+.product-title-exclusivo {
+    color: black;
     background: linear-gradient(
         to top,
         rgba(191, 36, 242, 0.4),
@@ -266,13 +267,13 @@ main {
     );
 }
 
-.product-title {
-  text-shadow: 1px 0 1px #fff;
+.product-title-exclusivo {
+    text-shadow: 1px 0 1px #fff;
 }
-.product-title {
-  border-radius: 7px;
+.product-title-exclusivo {
+    border-radius: 7px;
+    font-size: 22px;
 }
-
 
 /* RESPONSIVE */
 @media (max-width: 765px) {
