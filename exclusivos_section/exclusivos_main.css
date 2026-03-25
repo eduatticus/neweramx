@@ -244,7 +244,7 @@ main {
 
 
 @media (hover: hover) {
-    .grid-item:hover .product-title {
+    .grid-item:hover .product-title-exclusivo {
         background: rgba(92, 91, 91, 0.10);
         transform: translateY(-2px);
         transition: all 0.3s ease;
@@ -252,7 +252,7 @@ main {
 }
 
 @media (hover: none) {
-    .product-title {
+    .product-title-exclusivo {
         backdrop-filter: none;
         background: rgba(220, 219, 219, 0.65);
     }
