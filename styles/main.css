@@ -328,26 +328,29 @@ span.next:hover, span.prev:hover{
             box-sizing: border-box; /* Include padding in element's total width and height */
             align-content: start; /* Align grid content to the start of the grid area */
             justify-content: center; /* Center grid content horizontally */
-            margin-top: 2%;
+            margin-top: 5%;
         }
 
         /* Grid Item Styles */
         .grid-item {
-            background-color: #ffffff; /* White background for blocks */
             border-radius: 12px; /* Rounded corners */
             box-shadow: 0 4px 12px rgba(1, 0, 0, 1); /* Soft shadow */
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding: 20px;
             text-align: center;
             color: #333;
             font-size: 1.6em;
             font-weight: 600;
-            min-height: 150px; /* Minimum height for grid items */
-            transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+            min-height: 160px; /* Minimum height for grid items */
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 250px;
         }
+
+
+
 
         .grid-item a{
             display:flex;
@@ -361,6 +364,7 @@ span.next:hover, span.prev:hover{
 
         .grid-item:hover {
             transform: translateY(-5px); /* Slight lift on hover */
+            transition: transform 0.2s ease-in-out; /* Smooth hover effect */
         }
 
 
@@ -375,6 +379,85 @@ span.next:hover, span.prev:hover{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* Individual background images */
+.gi-first {
+    background-image: url(/img/mex_heritage/60751345_59FIFTY_LifestyleEnergy_LOSDOD_KGR_3QR.webp);
+}
+.gi-second {
+    background-image: url(/img/mex_futbol/70771443_59FIFTY_LMX_CLUAME_CHRM_3QR.webp);
+}
+.gi-third {
+    background-image: url(/img/mlb_gorra/60366940_60376736_59FIFTY_59502TCOLORPACK_NEYYAN_OSB_3QR_6c85cc7b-e603-4bd7-baff-8ac0213df75c.webp);
+}
+.gi-forth {
+    background-image: url(/img/nfl_gorra/60488009_59FIFTY_LIFESTYLEENERGY_PITSTE_OTC_3QR.webp);
+}
+.gi-fifth{
+    background-image: url(/img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QR.webp);
+}
+.gi-sixth{
+    background-image: url(/img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QR.webp);
+}
+
+.grid-item a {
+  width: 100%;
+  height: 100%;
+  color: rgb(222, 222, 222);
+  text-decoration: none;
+  text-shadow: 2px 1px #111;
+  font-size: 4.2vh;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end; /* TEXT AT BOTTOM */
+  text-decoration: none;
+}
+
+/* TEXT OVERLAY */
+.grid-item a span {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+/* DESKTOP HOVER */
+.grid-item:hover a span {
+  background: linear-gradient(to top, rgba(0,0,0,0.95), transparent);
+  opacity: 0.9;
+}
+
+
+
+        /* Responsive Breakpoints */
+
+        /* Medium screens (e.g., tablets) - 2 columns */
+        @media (min-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns */
+                /* Adjust rows if needed, or let them auto-flow */
+            }
+        }
+
+        /* Large screens (e.g., desktops) - 3 columns */
+        @media (min-width: 992px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns */
+                /* For a strict 3x3 visual, even with 6 items, we define 3 rows.
+                   The last row will simply be empty. */
+                grid-template-rows: repeat(3, 1fr); /* 3 rows, each taking equal space */
+                max-width: 1400px; /* Optional: cap max width on very large screens */
+                width: 100%; /* Ensure it still takes 100% of available width within max-width */
+            }
+        }
+
+
+
 
 
 
@@ -438,97 +521,6 @@ span.next:hover, span.prev:hover{
   margin: 0.3rem 0 0;
 }
 /*Fin de Testimonios */
-
-/* Individual background images */
-.gi-first {
-    background-image: url(/img/mex_heritage/60751345_59FIFTY_LifestyleEnergy_LOSDOD_KGR_3QR.webp);
-}
-.gi-second {
-    background-image: url(/img/mex_futbol/70771443_59FIFTY_LMX_CLUAME_CHRM_3QR.webp);
-}
-.gi-third {
-    background-image: url(/img/mlb_gorra/60366940_60376736_59FIFTY_59502TCOLORPACK_NEYYAN_OSB_3QR_6c85cc7b-e603-4bd7-baff-8ac0213df75c.webp);
-}
-.gi-forth {
-    background-image: url(/img/nfl_gorra/60488009_59FIFTY_LIFESTYLEENERGY_PITSTE_OTC_3QR.webp);
-}
-.gi-fifth{
-    background-image: url(/img/nba_gorra/70548918_9FIFTY_NBA_CHIBUL_SCRLT_3QR.webp);
-}
-.gi-sixth{
-    background-image: url(/img/motor_gorra/60747542_59FIFTY_DTC_MIAMI_MCLAREN_WHT_3QR.webp);
-}
-
-/* Shared link styles */
-.grid-item.gi-first a,
-.grid-item.gi-second a,
-.grid-item.gi-third a,
-.grid-item.gi-forth a,
-.grid-item.gi-fifth a,
-.grid-item.gi-sixth a
-{
-    color: rgb(242, 237, 237);
-    text-decoration: none;
-    text-shadow: 2px 1px #111;
-    font-size: 4.3vh;
-}
-
-.grid-item.gi-first a:hover,
-.grid-item.gi-second a:hover,
-.grid-item.gi-third a:hover,
-.grid-item.gi-forth a:hover,
-.grid-item.gi-fifth a:hover,
-.grid-item.gi-sixth a:hover
-{
-    font-size: 4.4vh;
-    text-shadow: 1px 2px 4px rgb(0, 0, 0);
-}
-
-        /* Responsive Breakpoints */
-
-        /* Medium screens (e.g., tablets) - 2 columns */
-        @media (min-width: 600px) {
-            .grid-container {
-                grid-template-columns: repeat(2, 1fr); /* 2 columns */
-                /* Adjust rows if needed, or let them auto-flow */
-            }
-        }
-
-        /* Large screens (e.g., desktops) - 3 columns */
-        @media (min-width: 992px) {
-            .grid-container {
-                grid-template-columns: repeat(3, 1fr); /* 3 columns */
-                /* For a strict 3x3 visual, even with 6 items, we define 3 rows.
-                   The last row will simply be empty. */
-                grid-template-rows: repeat(3, 1fr); /* 3 rows, each taking equal space */
-                max-width: 1200px; /* Optional: cap max width on very large screens */
-                width: 100%; /* Ensure it still takes 100% of available width within max-width */
-            }
-        }
-
-
-/*mobile*/
-@media (max-width: 768px) {
-/*clickable img mobile*/
-.grid-item {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 250px; /* adjust depending on your design */
-}
-
-.grid-item a {
-  display: flex;              /* centers the text */
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  color: rgb(222, 222, 222);
-  text-decoration: none;
-  text-shadow: 2px 1px #111;
-  font-size: 4.2vh;
-}
-
 
 
 
