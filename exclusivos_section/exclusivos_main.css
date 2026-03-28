@@ -269,10 +269,12 @@ main {
 
 .product-title-exclusivo {
     text-shadow: 1px 0 1px #fff;
-}
-.product-title-exclusivo {
     border-radius: 7px;
     font-size: 22px;
+    
+}
+.product-title-exclusivo:hover {
+    opacity: 0.5;
 }
 
 /* RESPONSIVE */
