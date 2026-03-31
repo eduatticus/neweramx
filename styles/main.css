@@ -111,7 +111,11 @@ body{
     .main-content
 	{
      width: 100%;
-    
+    	.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 	}
 }
 
