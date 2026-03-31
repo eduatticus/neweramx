@@ -105,9 +105,14 @@ body{
     .slides img {
         height: 400px;
     }
-	.main-content {
-	width: 1050px;
 }
+
+@media (max-width: 1060px) {
+    .main-content
+	{
+     width: 100%;
+    
+	}
 }
 
 .slider-continer {
