@@ -267,7 +267,7 @@ span.next:hover, span.prev:hover{
 
 .main-content {
     width: 1050px;
-    background-color: #1d1d1d;
+    background-color: #1d1d1dbf;
     font-family: "Exo 2", sans-serif;
     padding: 20px;
     border-radius: 10px;
@@ -666,8 +666,9 @@ span.next:hover, span.prev:hover{
 /* subtitle */
 .h4-sub {
   margin-top: 10px;
-  color: #666;
-  font-weight: 400;
+  color: #ecefef;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 /* 📱 MOBILE VERSION */
