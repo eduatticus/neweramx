@@ -105,6 +105,9 @@ body{
     .slides img {
         height: 400px;
     }
+	.main-content {
+	width: 1050px;
+}
 }
 
 .slider-continer {
