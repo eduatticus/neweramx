@@ -107,7 +107,7 @@ body{
     }
 }
 
-@media (max-width: 1060px) {
+@media (min-width: 1060px) {
     .main-content
 	{
      width: 100%;
