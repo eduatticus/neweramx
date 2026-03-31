@@ -107,17 +107,6 @@ body{
     }
 }
 
-@media (min-width: 1060px) {
-    .main-content
-	{
-     width: 100%;
-    	.page-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-	}
-}
 
 .slider-continer {
     width: 100%;
