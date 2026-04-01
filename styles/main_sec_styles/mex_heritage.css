@@ -186,6 +186,8 @@ main {
 
 
 
+
+
 /* MOBILE FIX — prevent horizontal overflow */
 @media (max-width: 600px) {
   .grid-container {
