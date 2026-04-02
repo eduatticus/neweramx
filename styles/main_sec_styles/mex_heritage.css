@@ -182,6 +182,18 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-eleventh {
+  background-image: url('../../img/mex_heritage/71015503_59FIFTY_WBC_MONARCH_MEX_ORNG_CHRM_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-twelfth {
+  background-image: url('../../img/mex_heritage/71015481_59FIFTY_WBC_CSMS_MEXMEX_SCRLT_PCH_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 
