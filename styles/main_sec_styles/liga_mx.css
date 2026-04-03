@@ -242,6 +242,24 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-21th {
+  background-image: url('../../img/mex_futbol/70569975_59FIFTY_LMX_OFFICIAL_GUACHI_BOB_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-22th {
+  background-image: url('../../img/mex_futbol/60853080_59FIFTY_LMX_PRNTDBRSH_GUACHI_BLK_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-23th {
+  background-image: url('../../img/mex_futbol/60674922_59FIFTY_LMX_GUACHI_2TONE_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* MOBILE FIX — prevent horizontal overflow */
