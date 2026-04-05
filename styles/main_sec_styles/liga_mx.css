@@ -260,6 +260,18 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-24th {
+  background-image: url('../../img/mex_futbol/60675046_59FIFTY_LMXCorduroyFW25_GUAATL_NAV_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-25th {
+  background-image: url('../../img/mex_futbol/70516081_59FIFTY_BOB_GUAATL_BLK_BLK_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* MOBILE FIX — prevent horizontal overflow */
