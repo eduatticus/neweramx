@@ -278,6 +278,12 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-27th {
+  background-image: url('../../img/mex_futbol/70516080_59FIFTY_MEXICOLIGA_GUAATL_BLACK_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* MOBILE FIX — prevent horizontal overflow */
