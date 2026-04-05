@@ -272,6 +272,12 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-26th {
+  background-image: url('../../img/mex_futbol/60850228_59FIFTY_LMX_RACING_GUAATL_BLK_SCRLT_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* MOBILE FIX — prevent horizontal overflow */
