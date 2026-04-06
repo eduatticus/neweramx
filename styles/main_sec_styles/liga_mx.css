@@ -284,6 +284,30 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-28th {
+  background-image: url('../../img/mex_futbol/9346510946334.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-29th {
+  background-image: url('../../img/mex_futbol/60792335_59FIFTY_LMX_SSNL_CLUAME_CHRM_TRQS_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-30th {
+  background-image: url('../../img/mex_futbol/60792438_59FIFTY_SS26LMXSEASONQ2_CLBAME_OTC_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-31th {
+  background-image: url('../../img/mex_futbol/60792455_59FIFTY_LMX_SEASONQ2_CLUAME_YLLW_NVY_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* MOBILE FIX — prevent horizontal overflow */
