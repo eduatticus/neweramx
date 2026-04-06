@@ -308,6 +308,12 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-32th {
+  background-image: url('../../img/mex_futbol/9341776592926.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* MOBILE FIX — prevent horizontal overflow */
