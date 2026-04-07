@@ -26,7 +26,7 @@ main {
 
 .top-legend {
   width: 100%;
-  background-image: url('/img/main_banners/1000_skull_banner.jpg'); /* replace with your image */
+  background-image: url('../../img/main_banners/1000_skull_banner.jpg'); /* replace with your image */
   background-size: cover;
   background-position: bottom;
   color: white;
