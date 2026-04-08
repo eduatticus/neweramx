@@ -41,79 +41,89 @@ main {
 }
 
 
-.grid-container { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit,minmax(440px, 2fr)); 
-  gap: 1.2rem; 
-  max-width: 1200px; 
-  margin: 0 auto; 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-
-.grid-item {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding: 2rem 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.grid-item a {
+/* LINK WRAPPER (acts as grid item container) */
+.grid-container a {
   text-decoration: none;
-  color: #333;
-  font-size: 2.1rem;
-  font-weight: 600;
-  display: block;
-  opacity: 0.7;
+  color: inherit;
 }
 
-
+/* CARD */
 .grid-item {
-  display: flex;
-  justify-content: end; /* centers horizontally */
-  align-items: end;     /* centers vertically */
-  text-align: end;
-}
-
-.grid-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
-}
-
-.grid-item:hover a {
-  color: #70baef; /* accent color on hover */
-}
-
-.grid-item {
-  min-height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 12px;
+  display: flex;
+  align-items: flex-end; /* TEXT AT BOTTOM */
 }
 
-.grid-item a {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-shadow: 1px 1px 3px black;
-  font-weight: bold;
-  padding: 0 1rem;
+/* TEXT OVERLAY */
+.grid-item span {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.3s ease, opacity 0.3s ease;
 }
 
-/* Overlay for all grid items */
-.grid-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 12px;
-  pointer-events: none;
+/* DESKTOP HOVER */
+.grid-container a:hover .grid-item span {
+  background: linear-gradient(to top, rgba(0,0,0,0.95), transparent);
+  opacity: 0.9;
+  font-size: 24px;
+}
+
+/* Smooth animation */
+.grid-container a {
+  display: block; /* important so transform works properly */
+  transition: transform 0.25s ease;
+}
+
+/* Hover lift effect (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+  .grid-container a:hover {
+    transform: translateY(-6px);
+  }
+}
+
+
+/* =========================
+   MOBILE FIX
+========================= */
+@media (max-width: 768px) {
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .grid-item {
+    height: 200px;
+  }
+
+  .grid-item span {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* Disable hover weirdness */
+  .grid-container a:hover .grid-item span {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  }
 }
 
 /* Specific backgrounds per category */
