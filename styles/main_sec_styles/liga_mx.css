@@ -25,9 +25,9 @@ main {
 
 .top-legend {
   width: 100%;
-  background-image: url('img/main_banners/liga-mxwebp.webp'); /* replace with your image */
+  background-image: url('/img/main_banners/pots-liga-mx-2025.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 20% 40%;
   border-radius: 5px;
   color: white;
   text-align: center;
