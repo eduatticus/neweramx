@@ -197,6 +197,12 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-16th {
+  background-image: url('../img/caps_main_block/exclusivos_inside/60661502_59FIFTY_LifestyleEnergy_BEABUT_EVG_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 .grid-item {
