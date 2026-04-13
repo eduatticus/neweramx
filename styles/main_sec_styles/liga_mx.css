@@ -96,7 +96,7 @@ main {
 }
 
 /* Description Text */
-.top-legend p {
+.top-legend h2 {
     max-width: 850px;
     margin: 0 auto;
     font-size: 1.1rem;
@@ -115,7 +115,7 @@ main {
         letter-spacing: 1px;
     }
 
-    .top-legend p {
+    .top-legend h2 {
         font-size: 1rem;
         line-height: 1.6;
     }
@@ -126,7 +126,7 @@ main {
         padding: 50px 15px;
     }
 
-    .top-legend p {
+    .top-legend h2 {
         font-size: 0.95rem;
     }
 }
