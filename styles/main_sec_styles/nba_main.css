@@ -98,6 +98,107 @@ main {
   }
 }
 
+/* ===== TOP LEGEND SECTION ===== */
+.top-legend {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(
+        135deg,
+        #000000 0%,
+        #111111 50%,
+        #1a1a1a 100%
+    );
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Subtle decorative glow */
+.top-legend::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    top: -80px;
+    left: -80px;
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+/* Container for better alignment */
+.top-legend h1,
+.top-legend h2 {
+    position: relative;
+    z-index: 1;
+}
+
+/* Main Title */
+.top-legend h1 {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Decorative underline */
+.top-legend h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 12px auto 0;
+    background: #d4af37; /* Gold accent */
+    border-radius: 2px;
+}
+
+/* Description Text */
+.top-legend h2 {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #dcdcdc;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .top-legend {
+        padding: 60px 20px;
+    }
+
+    .top-legend h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .top-legend h2 {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-legend {
+        padding: 50px 15px;
+    }
+
+    .top-legend h2 {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+.top-legend {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("/img/banners/new-nba-on-twitter-playoffs-banner-including-fox-v0-kxbqv0wmqzta1.jpg") center/cover no-repeat;
+}
+
 
 /* =========================
    MOBILE FIX
