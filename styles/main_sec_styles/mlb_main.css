@@ -40,6 +40,16 @@ main {
   margin-bottom: 5%;
 }
 
+@media (max-width: 768px) {
+  .top-legend {
+    font-size: 1.6rem;
+    padding: 1.5rem 0.8rem;
+    border-radius: 0;
+    letter-spacing: 0.5px;
+    margin-bottom: 8%;
+  }
+}
+
 .top-links{
   font-family: "Exo 2", sans-serif;
   font-size: 1.4rem;
