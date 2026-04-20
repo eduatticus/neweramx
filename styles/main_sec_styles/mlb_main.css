@@ -12,6 +12,17 @@ main {
 }
 
 .top-legend {
+  width: 100%;
+  background-image: url('/img/main_banners/Fp1BSX1akAAXcsQ.jpeg'); /* replace with your image */
+  background-size: cover;
+  background-position: top;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 3rem 1rem;
+  margin: 0;
+  position: relative;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  margin-bottom: 5%;
   text-align: center;
   font-size: 2.8rem;
   font-weight: bold;
@@ -20,22 +31,6 @@ main {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "Exo 2", sans-serif;
-}
-
-.top-legend {
-  width: 100%;
-  background-image: url('/img/main_banners/Fp1BSX1akAAXcsQ.jpeg'); /* replace with your image */
-  background-size: cover;
-  background-position: top;
-  border-radius: 5px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  padding: 3rem 1rem;
-  margin: 0;
-  position: relative;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-  margin-bottom: 5%;
 }
 
 @media (max-width: 768px) {
