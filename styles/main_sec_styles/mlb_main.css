@@ -13,7 +13,7 @@ main {
 
 .top-legend {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
   color: #1d231e;
@@ -31,7 +31,6 @@ main {
   border-radius: 5px;
   color: white;
   text-align: center;
-  font-size: 3rem;
   font-weight: bold;
   padding: 3rem 1rem;
   margin: 0;
