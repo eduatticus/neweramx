@@ -351,6 +351,18 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-19th {
+  background-image: url('../../img/mlb_gorra/60953461_59FIFTY_MLB_ALT_ALLO_ROT_BAUT_SADPAD_YLLW_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-20th {
+  background-image: url('../../img/mlb_gorra/60953460_59FIFTY_OTC_ALLO_ROT_BAU_SADPAD_BRWN_YLLW_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* MOBILE FIX — prevent horizontal overflow */
 @media (max-width: 600px) {
