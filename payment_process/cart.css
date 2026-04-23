@@ -10,7 +10,8 @@
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow to the transition */
-    width: 10rem;
+    width: 14rem;
+    height: 2.8rem;
   }
 
   #checkout-btn:hover {
