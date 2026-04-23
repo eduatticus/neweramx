@@ -423,6 +423,18 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-33th {
+  background-image: url('../../img/mex_futbol/70569968_59FIFTY_LMX_OFFICIAL_GUACHI_PRPL_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-34th {
+  background-image: url('../../img/mex_futbol/70516227_59FIFTY_MEXICOLIGA_MONTIG_BLUE_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 /* MOBILE FIX — prevent horizontal overflow */
