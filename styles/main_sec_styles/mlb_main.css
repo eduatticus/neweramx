@@ -363,6 +363,12 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-21th {
+  background-image: url('../../img/mlb_gorra/14737572_59FIFTY_MLB_2TONE_LOSDOD_BL_CHRM_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* MOBILE FIX — prevent horizontal overflow */
 @media (max-width: 600px) {
