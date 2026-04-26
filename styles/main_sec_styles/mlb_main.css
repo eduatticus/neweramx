@@ -369,6 +369,12 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+.gi-22th {
+  background-image: url('../../img/mlb_gorra/60804775_59FIFTY_MLB_COLORPACK_SADPAD_GRY_MNT_3QL.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* MOBILE FIX — prevent horizontal overflow */
 @media (max-width: 600px) {
