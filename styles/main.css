@@ -674,6 +674,7 @@ span.next:hover, span.prev:hover{
 
 .ver_todo{
  font-size: 2rem;
+ font-weight: 600;
 }
 
 /* 📱 MOBILE VERSION */
