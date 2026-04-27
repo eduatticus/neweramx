@@ -672,6 +672,10 @@ span.next:hover, span.prev:hover{
   font-size: 1.4rem;
 }
 
+.ver_todo{
+ font-size: 2rem;
+}
+
 /* 📱 MOBILE VERSION */
 @media (max-width: 768px) {
 
