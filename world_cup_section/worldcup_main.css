@@ -1,0 +1,375 @@
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+main {
+  background-image: url(/img/main_banners/mundial-2026-estados-unidos-mexico-y-canada-13957.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem 1rem 3rem;
+}
+
+.top-legend {
+  width: 100%;
+  background-image: url('/img/main_banners/nike-rip-the-script.avif');
+  background-size: cover;
+  background-position: 20% 50%;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-weight: bold;
+  padding: 3rem 1rem;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+
+/* ---------- GENERAL ---------- */
+main {
+    padding: 2rem 1rem;
+}
+
+
+/* ===== TOP LEGEND SECTION ===== */
+.top-legend {
+  position: relative;
+  width: 100%;
+  padding: 80px 20px;
+  margin-bottom: 5%;
+  border-radius: 5px;
+
+  /* Background image + overlay */
+  background:
+  linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
+  url("/img/main_banners/nike-rip-the-script.avif") center/cover no-repeat;
+
+  /* Typography */
+  text-align: center;
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+/* Decorative glow */
+.top-legend::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  top: -80px;
+  left: -80px;
+  border-radius: 50%;
+  filter: blur(80px);
+}
+
+/* Content layering */
+.top-legend h1,
+.top-legend h2 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Title */
+.top-legend h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Underline */
+.top-legend h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 12px auto 0;
+  background: #d4af37;
+  border-radius: 2px;
+}
+
+/* Subtitle */
+.top-legend h2 {
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #f5f4f4;
+  text-transform: none; /* prevents ALL CAPS on paragraph */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .top-legend {
+    padding: 60px 20px;
+  }
+
+  .top-legend h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .top-legend h2 {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-legend {
+    padding: 50px 15px;
+  }
+
+  .top-legend h2 {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- GRID ---------- */
+.grid-container {
+    display: grid;
+    gap: 1.5rem;
+
+    /* AUTO RESPONSIVE MAGIC */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* ---------- CARD STYLE ---------- */
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    min-height: 180px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 16px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.grid-item {
+    min-height: 220px; /* was 180 → too small */
+}
+
+/* ---------- HOVER EFFECT ---------- */
+.grid-item:hover {
+    transform: translateY(-6px) scale(0.2);
+    filter: brightness(1.1);
+}
+
+/* ---------- MOBILE TOUCH FIX ---------- */
+@media (hover: none) {
+    .grid-item:hover {
+        transform: none;
+        filter: none;
+        background-position: center;
+    }
+}
+
+/* ---------- OPTIONAL: TEXT IMPROVEMENT ---------- */
+.grid-item {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    font-weight: 500;
+    line-height: 0.8;
+    backdrop-filter: brightness(0.85);
+}
+/* Specific backgrounds per category */
+.gi-first {
+  background-image: url('/img/caps_main_block/worldcup_inside/mex_verd_1.webp');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.gi-second {
+  background-image: url('/img/caps_main_block/exclusivos_inside/tom1_blue.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-third {
+  background-image: url('/img/caps_main_block/exclusivos_inside/tom1_pink.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-forth {
+  background-image: url('/img/caps_main_block/exclusivos_inside/60598319_59FIFTY_ALEBRIJE_PCH_SKY_CHRM_F_af53bb63-54cd-4a73-951c-2eb4a50a6841.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-fifth {
+  background-image: url('/img/caps_main_block/exclusivos_inside/60597166_59FIFTY_MEX_QUETZAL_NE_CHRM_F.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gi-sixth {
+  background-image: url('/img/caps_main_block/exclusivos_inside/60598320_59FIFTY_NEWERA_ALEBRIJE_CHRM_F.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-seventh {
+  background-image: url('/img/caps_main_block/exclusivos_inside/60588030_9FIFTY_LifestyleEnergy_BAT_F.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eight {
+  background-image: url('/img/caps_main_block/exclusivos_inside/70894067_59FIFTYAF_BATMANDAY_BATMAN_BROWN_F.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-ninth {
+  background-image: url('/img/caps_main_block/exclusivos_inside/60597695_59FIFTY_NEWERA_BEETLEJUICE_BLCK_F.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-tenth {
+  background-image: url('/img/caps_main_block/exclusivos_inside/60746794_59FIFTY_LifestyleEnergy_THE_20JETSONS_BLK_F.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-eleventh {
+  background-image: url('/img/caps_main_block/exclusivos_inside/60746855_59FIFTY_LifestyleEnergy_SCOOBY_20DOO_BLK_F.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gi-twelvth {
+  background-image: url('/img/caps_main_block/exclusivos_inside/60751438_59FIFTY_LifestyleEnergy_THUNDERCATS_XNV_F.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.grid-item {
+    position: relative;
+    z-index: 0;
+}
+
+.grid-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.10), rgba(0,0,0,0.1));
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none; /* 🔥 prevents blocking clicks */
+}
+
+/* TEXT ABOVE OVERLAY */
+.grid-item {
+    display: flex;
+    align-items: flex-end; /* 🔥 better product look */
+    padding: 1.5rem;
+}
+
+.grid-item {
+    font-weight: 600;
+    z-index: 2;
+}
+
+@media (hover: hover) {
+    .grid-item:hover::before {
+        opacity: 0;
+    }
+}
+
+@media (hover: none) {
+    .grid-item::before {
+        display: none;
+    }
+}
+
+.grid-item {
+    background-size: 100%;
+    transition: transform 0.3s ease, background-size 0.4s ease;
+}
+
+@media (hover: hover) {
+    .grid-item:hover {
+        transform: translateY(-6px);
+        background-size: 145%;
+    }
+}
+
+.grid-item {
+    align-items: flex-end; /* push text down */
+    text-align: left;
+}
+
+.grid-item {
+    font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+    line-height: 1.1;
+}
+
+
+
+@media (hover: hover) {
+    .grid-item:hover .product-title-exclusivo {
+        background: rgba(92, 91, 91, 0.10);
+        transform: translateY(-2px);
+        transition: all 0.3s ease;
+    }
+}
+
+@media (hover: none) {
+    .product-title-exclusivo {
+        backdrop-filter: none;
+        background: rgba(220, 219, 219, 0.65);
+    }
+}
+
+.product-title-exclusivo {
+    color: black;
+    background: linear-gradient(
+        to top,
+        rgba(252, 252, 13, 0.4),
+        rgba(87, 250, 12, 0.8)
+    );
+}
+
+.product-title-exclusivo {
+    text-shadow: 1px 0 1px #fff;
+    border-radius: 7px;
+    font-size: 22px;
+    
+}
+.product-title-exclusivo:hover {
+    opacity: 0.5;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 765px) {
+    
+  }
