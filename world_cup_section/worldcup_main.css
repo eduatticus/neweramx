@@ -198,21 +198,21 @@ main {
 }
 
 .gi-second {
-  background-image: url('/img/caps_main_block/exclusivos_inside/tom1_blue.png');
+  background-image: url('img/worldcup_inside/mex_verd_1.web');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-third {
-  background-image: url('/img/caps_main_block/exclusivos_inside/tom1_pink.png');
+  background-image: url('../img/worldcup_inside/mex_verd_1.web');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .gi-forth {
-  background-image: url('/img/caps_main_block/exclusivos_inside/60598319_59FIFTY_ALEBRIJE_PCH_SKY_CHRM_F_af53bb63-54cd-4a73-951c-2eb4a50a6841.webp');
+  background-image: url('../../img/worldcup_inside/mex_verd_1.web');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
