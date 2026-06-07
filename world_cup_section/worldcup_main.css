@@ -191,7 +191,7 @@ main {
 }
 /* Specific backgrounds per category */
 .gi-first {
-  background-image: url('../img/worldcup_inside/mex_verd_1.webp');
+  background-image: url('/img/worldcup_inside/mex_verd_1.webp');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
