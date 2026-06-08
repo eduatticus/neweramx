@@ -200,47 +200,47 @@ main {
 .gi-second {
   background-image: url('/img/worldcup_inside/mex_larg_1.webp');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
 .gi-third {
   background-image: url('/img/worldcup_inside/mex_blc_larga_1.webp');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
 .gi-forth {
   background-image: url('/img/worldcup_inside/mex_blanca_1.webp');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
 .gi-fifth {
   background-image: url('/img/worldcup_inside/mex_negra_1.webp');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
 .gi-sixth {
   background-image: url('/img/worldcup_inside/mex_negra_lrg_1.webp');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .gi-seventh {
   background-image: url('/img/worldcup_inside/');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .gi-eight {
   background-image: url('/img/worldcup_inside/');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .gi-ninth {
