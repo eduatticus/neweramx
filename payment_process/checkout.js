@@ -1,5 +1,6 @@
-
 document.addEventListener("DOMContentLoaded", function() {
+
+  // ==================== MANEJO DEL DROPDOWN DE ESTADO ====================
   const dropdown = document.getElementById("stateDropdown");
   const selectBox = dropdown.querySelector(".select-box");
   const optionsContainer = dropdown.querySelector(".options-container");
@@ -7,70 +8,49 @@ document.addEventListener("DOMContentLoaded", function() {
   const selected = dropdown.querySelector(".selected");
   const hiddenInput = document.getElementById("state");
 
-  // Toggle dropdown
   selectBox.addEventListener("click", () => {
-    optionsContainer.style.display =
-      optionsContainer.style.display === "block" ? "none" : "block";
+    optionsContainer.style.display = optionsContainer.style.display === "block" ? "none" : "block";
   });
 
-  // Close dropdown if clicked outside
   document.addEventListener("click", (e) => {
     if (!dropdown.contains(e.target)) {
       optionsContainer.style.display = "none";
     }
   });
 
-  // Update selection
   radios.forEach((radio) => {
     radio.addEventListener("change", () => {
       if (radio.checked) {
         selected.textContent = radio.parentNode.textContent.trim();
         hiddenInput.value = radio.value;
-        optionsContainer.style.display = "none"; // auto-close after pick
+        optionsContainer.style.display = "none";
       }
     });
   });
-});
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  const cartSummary = document.getElementById("cart-summary"); // optional
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-  // If you want to show a quick summary of the cart
-  if (cartSummary && cart.length > 0) {
-    let total = 0;
-    let html = "<ul>";
-    cart.forEach(item => {
-      const subtotal = item.price * item.quantity;
-      total += subtotal;
-      html += `<li>${item.name} - ${item.quantity} x $${item.price}</li>`;
-    });
-    html += `</ul><p><strong>Total: $${total.toFixed(2)}</strong></p>`;
-    cartSummary.innerHTML = html;
-
-    // Save total for next page
-    localStorage.setItem("cartTotal", total);
-  }
-
-  // When submitting the form
+  // ==================== ENVÍO DEL FORMULARIO ====================
   const form = document.getElementById("checkout-container");
+  
   form.addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent normal submission
+    e.preventDefault();
 
     const checkoutData = {
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      state: document.getElementById("state").value,
+      municipio: document.getElementById("municipio").value,
+      colonia: document.getElementById("colonia").value,
       city: document.getElementById("city").value,
       address: document.getElementById("address").value,
-      phone: document.getElementById("phone").value
+      address2: document.getElementById("address2").value,
+      zip: document.getElementById("zip").value
     };
 
-    // Save checkout info
+    // Guardar en localStorage
     localStorage.setItem("checkoutData", JSON.stringify(checkoutData));
 
-    // Go to SPEI payment page
+    // Redirigir a la página de pago
     window.location.href = "spei_pay.html";
   });
 });
