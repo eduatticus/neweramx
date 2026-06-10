@@ -59,14 +59,14 @@ document.addEventListener("DOMContentLoaded", function() {
   form.addEventListener("submit", function(e) {
     e.preventDefault(); // prevent normal submission
 
-    const checkoutData = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      city: document.getElementById("city").value,
-      mun: document.getElementById("mun").value,
-      address: document.getElementById("address").value,
-      phone: document.getElementById("phone").value
-    };
+const checkoutData = {
+  name: document.getElementById("name").value,
+  email: document.getElementById("email").value,
+  city: document.getElementById("city").value,
+  mun: document.getElementById("mun").value,
+  address: document.getElementById("address").value,
+  phone: document.getElementById("phone").value
+};
 
     // Save checkout info
     localStorage.setItem("checkoutData", JSON.stringify(checkoutData));
