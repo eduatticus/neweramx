@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
       email: document.getElementById("email").value,
       city: document.getElementById("city").value,
       municipio: document.getElementById("municipio").value,
+      colonia: document.getElementById("colonia").value,
       address: document.getElementById("address").value,
       phone: document.getElementById("phone").value
     };
