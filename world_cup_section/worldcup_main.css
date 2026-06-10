@@ -246,25 +246,25 @@ main {
 .gi-ninth {
   background-image: url('/img/worldcup_inside/brasil_visita_1.webp');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .gi-tenth {
   background-image: url('/img/worldcup_inside/');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .gi-eleventh {
   background-image: url('/img/worldcup_inside/');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .gi-twelvth {
   background-image: url('/img/worldcup_inside/');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
