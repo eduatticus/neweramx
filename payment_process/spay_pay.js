@@ -23,15 +23,16 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   itemsHTML += "</ul>";
 
-  offerDiv.innerHTML = `
-    <h3>Resumen del Pedido</h3>
-    <p><strong>Nombre:</strong> ${checkoutData.name}</p>
-    <p><strong>Correo:</strong> ${checkoutData.email}</p>
-    <p><strong>Ciudad:</strong> ${checkoutData.city}</p>
-    <p><strong>Dirección:</strong> ${checkoutData.address}</p>
-    <p><strong>Teléfono:</strong> ${checkoutData.phone}</p>
-    <h4>Productos:</h4>
-    ${itemsHTML}
-    <p><strong>Total:</strong> $${parseFloat(total).toFixed(2)}</p>
-  `;
+offerDiv.innerHTML = `
+  <h3>Resumen del Pedido</h3>
+  <p><strong>Nombre:</strong> ${checkoutData.name}</p>
+  <p><strong>Correo:</strong> ${checkoutData.email}</p>
+  <p><strong>Estado:</strong> ${checkoutData.state}</p>
+  <p><strong>Ciudad:</strong> ${checkoutData.city}</p>
+  <p><strong>Dirección:</strong> ${checkoutData.address}</p>
+  <p><strong>Teléfono:</strong> ${checkoutData.phone}</p>
+  <h4>Productos:</h4>
+  ${itemsHTML}
+  <p><strong>Total:</strong> $${parseFloat(total).toFixed(2)}</p>
+`;
 });
