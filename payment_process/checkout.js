@@ -55,6 +55,11 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // When submitting the form
+ // When submitting the form
+  const form = document.getElementById("checkout-container");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent normal submission
+  
 const selectedState = document.querySelector('input[name="stateOption"]:checked');
 
 const checkoutData = {
