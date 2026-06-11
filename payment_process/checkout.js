@@ -54,24 +54,55 @@ document.addEventListener("DOMContentLoaded", function() {
     localStorage.setItem("cartTotal", total);
   }
 
-  // When submitting the form
-  const form = document.getElementById("checkout-container");
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent normal submission
+ document.addEventListener("DOMContentLoaded", () => {
 
-const checkoutData = {
-  name: document.getElementById("name").value,
-  email: document.getElementById("email").value,
-  city: document.getElementById("city").value,
-  mun: document.getElementById("mun").value,
-  address: document.getElementById("address").value,
-  phone: document.getElementById("phone").value
-};
+  // Save selected state into hidden input
+  const radios = document.querySelectorAll(
+    'input[name="stateOption"]'
+  );
 
-    // Save checkout info
-    localStorage.setItem("checkoutData", JSON.stringify(checkoutData));
+  radios.forEach(radio => {
+    radio.addEventListener("change", () => {
 
-    // Go to SPEI payment page
-    window.location.href = "spei_pay.html";
+      document.getElementById("state").value =
+        radio.value;
+
+      const selectedText =
+        document.querySelector("#stateDropdown .selected");
+
+      if (selectedText) {
+        selectedText.textContent = radio.value;
+      }
+    });
   });
+
+  // Form submit
+  const form = document.getElementById("checkout-container");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const checkoutData = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      state: document.getElementById("state").value,
+      city: document.getElementById("city").value,
+      mun: document.getElementById("mun").value,
+      address: document.getElementById("address").value,
+      address2: document.getElementById("address2").value,
+      zip: document.getElementById("zip").value
+    };
+
+    localStorage.setItem(
+      "checkoutData",
+      JSON.stringify(checkoutData)
+    );
+
+    console.log("Saved:", checkoutData);
+
+    // redirect if needed
+    // window.location.href = "payment.html";
+  });
+
 });
