@@ -262,11 +262,26 @@ main {
   background-repeat: no-repeat;
 }
 .gi-twelvth {
+  background-image: url('/img/worldcup_inside/alemania_1.webp');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.gi-thirteen {
+  background-image: url('/img/worldcup_inside/alemania_visit_1.webp');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.gi-fortheen {
   background-image: url('/img/worldcup_inside/');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
+
+
+
 
 
 
