@@ -55,17 +55,16 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // When submitting the form
-  const form = document.getElementById("checkout-container");
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent normal submission
+const selectedState = document.querySelector('input[name="stateOption"]:checked');
 
-    const checkoutData = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      city: document.getElementById("city").value,
-      address: document.getElementById("address").value,
-      phone: document.getElementById("phone").value
-    };
+const checkoutData = {
+  name: document.getElementById("name").value,
+  email: document.getElementById("email").value,
+  city: document.getElementById("city").value,
+  state: selectedState ? selectedState.value : "",
+  address: document.getElementById("address").value,
+  phone: document.getElementById("phone").value
+};
 
     // Save checkout info
     localStorage.setItem("checkoutData", JSON.stringify(checkoutData));
