@@ -29,6 +29,7 @@ offerDiv.innerHTML = `
   <p><strong>Correo:</strong> ${checkoutData.email}</p>
   <p><strong>Estado:</strong> ${checkoutData.state}</p>
   <p><strong>Ciudad:</strong> ${checkoutData.city}</p>
+  <p><strong>Municipio:</strong> ${checkoutData.municipio}</p>
   <p><strong>Dirección:</strong> ${checkoutData.address}</p>
   <p><strong>Teléfono:</strong> ${checkoutData.phone}</p>
   <h4>Productos:</h4>
