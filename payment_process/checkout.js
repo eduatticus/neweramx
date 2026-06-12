@@ -66,6 +66,7 @@ const checkoutData = {
   name: document.getElementById("name").value,
   email: document.getElementById("email").value,
   city: document.getElementById("city").value,
+  municipio: document.getElementById("municipio").value,
   state: selectedState ? selectedState.value : "",
   address: document.getElementById("address").value,
   phone: document.getElementById("phone").value
