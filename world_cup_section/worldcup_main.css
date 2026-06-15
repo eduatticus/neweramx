@@ -273,8 +273,14 @@ main {
   background-position: top;
   background-repeat: no-repeat;
 }
-.gi-fortheen {
-  background-image: url('/img/worldcup_inside/');
+.gi-fourtheen {
+  background-image: url('/img/worldcup_inside/spain_1.webp');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.gi-fiftheen {
+  background-image: url('/img/worldcup_inside/spain_visit_1.webp');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
