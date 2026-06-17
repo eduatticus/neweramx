@@ -285,6 +285,18 @@ main {
   background-position: top;
   background-repeat: no-repeat;
 }
+.gi-sixtheen {
+  background-image: url('/img/worldcup_inside/francia_1.webp');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.gi-seventheen {
+  background-image: url('/img/worldcup_inside/francia_visit_1.webp');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
 
 
 
