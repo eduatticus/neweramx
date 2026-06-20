@@ -78,6 +78,20 @@ body{
     margin-bottom: 50px;
 }
 
+ /* an update for mobile */
+@media (max-width: 768px) {
+
+    .highlight-text {
+      color: rgb(229, 41, 41);
+    }
+
+    .spei-section {
+      margin-top: 0;
+    }
+ 
+}
+ /* an update for mobile */
+
 .bonus { 
     color: #0066cc; 
     font-weight: bold; 
