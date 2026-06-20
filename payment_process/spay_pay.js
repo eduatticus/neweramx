@@ -17,6 +17,18 @@ document.addEventListener("DOMContentLoaded", function() {
     return;
   }
 
+// Set customer name at the top (with capitalization)
+const nameElement = document.getElementById("customer-name");
+if (nameElement && checkoutData.name) {
+  const capitalizedName = checkoutData.name
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+  
+  nameElement.textContent = capitalizedName;
+}
+
   let itemsHTML = "<ul>";
   cart.forEach(item => {
     itemsHTML += `<li>${item.product} - Talla: ${item.size} x ${item.price}</li>`;
