@@ -167,10 +167,16 @@ body {
 }
 
 .price {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #555555;
   margin-bottom: 20px;
+}
+
+.price_before{
+  color: #979797;
+  text-decoration: line-through;
+  margin-bottom: -4%;
 }
 
 label {
