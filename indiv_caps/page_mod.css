@@ -184,6 +184,9 @@ body {
   .price_before{
     text-align: center;
   }
+  .price {
+  font-size: 2.6rem;
+  }
 }
 
 label {
