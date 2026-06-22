@@ -179,6 +179,13 @@ body {
   margin-bottom: -4%;
 }
 
+/* Show prev price on mobile */
+@media (max-width: 760px) {
+  .price_before{
+    text-align: center;
+  }
+}
+
 label {
   font-weight: 500;
   color: #444;
